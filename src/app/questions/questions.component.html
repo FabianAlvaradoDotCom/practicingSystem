@@ -1,9 +1,10 @@
 ﻿<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h2>Heading</h2>
-            <textarea name="textarea" rows="10" class="col-12 codeArea">My code...</textarea>
-            <input type="text" value="My code..." class="col-12 codeArea" />
-        </div>
+    <div class="row">        
+        <form>
+            <div class="form-group" *ngFor="let q of questionsAnswers">
+                <label for="{{q.id}}">{{q.question}}</label>
+                <input type="text" class="form-control" id="{{q.id}}"/>
+            </div>
+        </form>
     </div>
 </div>
