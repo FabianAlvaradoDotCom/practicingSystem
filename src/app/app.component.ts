@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { QuestionsDataService } from './questions/questions-data.service';
 
 @Component({
-    moduleId: module.id,
-    selector: 'app-root',
-    templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css'],
-    providers: [QuestionsDataService]
+    selector: 'my-app',
+    template: `
+        <div class="container">
+          <my-signup></my-signup>
+        </div>
+    `
 })
-export class AppComponent {
-}
+export class AppComponent { }
