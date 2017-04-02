@@ -1,10 +1,12 @@
 ﻿<div class="container">
-    <div class="row">        
+    <div class="row">
         <form>
-            <div class="form-group" *ngFor="let q of questionsAnswers">
-                <label for="{{q.id}}">{{q.question}}</label>
-                <input type="text" class="form-control" id="{{q.id}}"/>
-            </div>
+            <fieldset>
+                <div class="form-group" *ngFor="let qData of questionsAnswers">
+                    <label for="{{qData.id}}">{{qData.question}}</label>
+                    <input placeholder="{{qData.placeholder}}" type="text" class="form-control" id="{{qData.id}}" required/>
+                </div>
+            </fieldset>
         </form>
     </div>
 </div>
