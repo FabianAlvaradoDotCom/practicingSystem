@@ -1,7 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, AbstractControl, ValidatorFn } from '@angular/forms';
 
 import { Customer } from './customer';
+
+function ratingRange(min: number, max: number): ValidatorFn {
+    return (c: AbstractControl): { [key: string]: boolean } | null => {
+        if (c.value !== undefined && (isNaN(c.value) || c.value < min || c.value > max)) {
+            return { 'range': true };
+        };
+        return null;
+    }
+}
+
+
 
 @Component({
     moduleId: module.id,
@@ -19,9 +30,13 @@ export class CustomerComponent implements OnInit {
         this.customerForm = this.myFormBuilder.group({
             firstName: ['', [Validators.required, Validators.minLength(7)]],
             lastName: ['', [Validators.required, Validators.maxLength(10)]],
-            email: ['', [Validators.required, Validators.email]],
-            phone: ['', [Validators.required, Validators.minLength(7)]],
+            emailGroup: this.myFormBuilder.group({
+                email: ['', [Validators.required, Validators.email]],
+                confirmEmail: ['', [Validators.required, Validators.email]]
+            }),
+            phone: '',
             notification: 'email',
+            rating: ['', ratingRange(1, 5)],
             sendCatalog: true,
         });
     }
@@ -40,7 +55,7 @@ export class CustomerComponent implements OnInit {
             sendCatalog: false
         });
     }
-    setNotification(notifyVia: string): void{
+    setNotification(notifyVia: string): void {
         const phoneControl = this.customerForm.get('phone');
         if (notifyVia === 'text') {
             phoneControl.setValidators(Validators.required);
@@ -49,4 +64,4 @@ export class CustomerComponent implements OnInit {
         }
         phoneControl.updateValueAndValidity();
     }
- }
+}
