@@ -20,6 +20,8 @@ export class CustomerComponent implements OnInit {
             firstName: ['', [Validators.required, Validators.minLength(7)]],
             lastName: ['', [Validators.required, Validators.maxLength(10)]],
             email: ['', [Validators.required, Validators.email]],
+            phone: ['', [Validators.required, Validators.minLength(7)]],
+            notification: 'email',
             sendCatalog: true,
         });
     }
@@ -37,6 +39,14 @@ export class CustomerComponent implements OnInit {
             email: "caribean@pirates.com",
             sendCatalog: false
         });
-
+    }
+    setNotification(notifyVia: string): void{
+        const phoneControl = this.customerForm.get('phone');
+        if (notifyVia === 'text') {
+            phoneControl.setValidators(Validators.required);
+        } else {
+            phoneControl.clearValidators();
+        }
+        phoneControl.updateValueAndValidity();
     }
  }
