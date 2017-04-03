@@ -50,7 +50,9 @@
                     </div>
                 </div>
 
-                <div formGroupName="emailGroup">
+                <div formGroupName="emailGroup"
+                     [ngClass]="{'has-error': customerForm.get('emailGroup').errors }"
+                     >
                     <div class="form-group"
                          [ngClass]="{'has-error': (customerForm.get('emailGroup.email').touched || customerForm.get('emailGroup.email').dirty) && !customerForm.get('emailGroup.email').valid }">
                         <label class="col-md-2 control-label"

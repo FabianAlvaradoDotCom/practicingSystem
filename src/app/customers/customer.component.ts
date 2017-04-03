@@ -3,7 +3,24 @@ import { FormGroup, FormBuilder, Validators, AbstractControl, ValidatorFn } from
 
 import { Customer } from './customer';
 
-function ratingRange(min: number, max: number): ValidatorFn {
+
+function fieldsMatcher(c: AbstractControl) {
+    let emailControl = c.get('email');
+    let confirmControl = c.get('confirmEmail');
+
+    if (emailControl.pristine || confirmControl.pristine) {
+        return null;
+    }
+    if (emailControl.value === confirmControl.value) {
+        return null;
+    }
+    return { 'match' : true };
+}
+
+
+
+
+function ratingRange(min: number, max: number): ValidatorFn { // FACTORY FUNCTION
     return (c: AbstractControl): { [key: string]: boolean } | null => {
         if (c.value !== undefined && (isNaN(c.value) || c.value < min || c.value > max)) {
             return { 'range': true };
@@ -32,8 +49,8 @@ export class CustomerComponent implements OnInit {
             lastName: ['', [Validators.required, Validators.maxLength(10)]],
             emailGroup: this.myFormBuilder.group({
                 email: ['', [Validators.required, Validators.email]],
-                confirmEmail: ['', [Validators.required, Validators.email]]
-            }),
+                confirmEmail: ['', Validators.required]
+            }, { validator: fieldsMatcher }),
             phone: '',
             notification: 'email',
             rating: ['', ratingRange(1, 5)],
