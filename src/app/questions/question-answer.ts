@@ -7,4 +7,5 @@
     questionTopic: string;    
     question: string;
     answer: string;
+    errorMessage: string;
 }
