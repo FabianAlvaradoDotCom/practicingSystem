@@ -5,7 +5,7 @@ import { IQuestionAnswer } from './question-answer'; // DataService Structure de
 import { QuestionsDataService } from './questions-data.service'; // Importing actual data for questions
 
 
-function ratingRange(min: number, max: number): ValidatorFn {
+function answerValidation(min: number, max: number): ValidatorFn {
     return (c: AbstractControl): { [key: string]: boolean } | null => {
         if (c.value !== undefined && (isNaN(c.value) || c.value < min || c.value > max)) {
             return { 'range': true };
@@ -24,8 +24,8 @@ export class QuestionsComponent implements OnInit {
     questionsAnswers: IQuestionAnswer[];// Data service added using an interface
     questionsForm: FormGroup;
 
-    get addresses(): FormArray {
-        return <FormArray>this.questionsForm.get('addresses');
+    get arrayAnswers(): FormArray {
+        return <FormArray>this.questionsForm.get('arrayAnswers');
     }    
 
     constructor(private myFormBuilder: FormBuilder, private _questionsAnswers: QuestionsDataService) { }// DataService initialized
@@ -33,26 +33,26 @@ export class QuestionsComponent implements OnInit {
     ngOnInit(): void {
         this.questionsAnswers = this._questionsAnswers.getQuestionAnswer();///////////////
         this.questionsForm = this.myFormBuilder.group({            
-            sendCatalog: true,
-            addresses: this.myFormBuilder.array([this.buildAddress()])
+            displayQuestions: true,
+            arrayAnswers: this.myFormBuilder.array([this.buildAddress()])
         });
 
         this.addAddress(); // To make the questions populate automatically
     }
 
     //addAddress(): void {  //To add individually the questions
-    //    this.addresses.push(this.buildAddress());
+    //    this.arrayAnswers.push(this.buildAddress());
     //}
 
     addAddress(): void {
         for (let f = 0; f < this.questionsAnswers.length - 1; f++) {
-            this.addresses.push(this.buildAddress());
+            this.arrayAnswers.push(this.buildAddress());
         }
     }
 
     buildAddress(): FormGroup {
         return this.myFormBuilder.group({           
-            rating2: ['', ratingRange(1, 5)]           
+            answerField: ['', answerValidation(1, 5)]           
         });
     }
     save(): void {

@@ -12,31 +12,31 @@
                 <div class="form-group">
                     <div class="col-md-offset-1 col-md-8 checkbox" >
                         <label>
-                            <input id="sendCatalogId"
+                            <input id="displayQuestions"
                                    type="checkbox"
-                                   formControlName = "sendCatalog" >
+                                   formControlName = "displayQuestions" >
                             Display questions
                         </label>
                     </div>
                 </div>                
-                <div *ngIf="questionsForm.get('sendCatalog').value">                    
-                    <div formArrayName="addresses" *ngFor="let address of addresses.controls; let i=index">
+                <div *ngIf="questionsForm.get('displayQuestions').value">                    
+                    <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
                         <div [formGroupName]="i">
                             <div class="form-group"
-                                 [ngClass]="{'has-error': (address.get('rating2').touched ||
-                                              address.get('rating2').dirty) &&
-                                              !address.get('rating2').valid }">
-                                <label class="col-md-2 control-label"
+                                 [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
+                                              answerQuestion.get('answerField').dirty) &&
+                                              !answerQuestion.get('answerField').valid }">
+                                <label class="col-md-12 control-label"
                                        attr.for ="{{ 'ratingId' + i }}">{{questionsAnswers[i].question}}</label>
                                 <div class="col-md-8">
-                                    <input class="form-control"
+                                    <textarea class="form-control"
                                            id="{{ 'ratingId' + i }}" 
                                            type="number"
-                                           formControlName="rating2" />                                    
-                                    <span class="help-block" *ngIf="(address.get('rating2').touched
-                                                         || address.get('rating2').dirty) &&
-                                                         address.get('rating2').errors">
-                                        <span *ngIf="address.get('rating2').errors.range">
+                                           formControlName="answerField"></textarea>
+                                    <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
+                                                         || answerQuestion.get('answerField').dirty) &&
+                                                         answerQuestion.get('answerField').errors">
+                                        <span *ngIf="answerQuestion.get('answerField').errors.range">
                                             {{questionsAnswers[i].errorMessage}}
                                         </span>
                                     </span>
