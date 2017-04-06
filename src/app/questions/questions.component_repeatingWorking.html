@@ -9,7 +9,7 @@
               (ngSubmit)="save()"
               [formGroup]="customerForm">
             <fieldset>
-                <!--<div class="form-group"
+                <div class="form-group"
                     [ngClass]="{'has-error': (customerForm.get('firstName').touched || 
                                               customerForm.get('firstName').dirty) &&
                                               !customerForm.get('firstName').valid }">
@@ -33,9 +33,9 @@
                             </span>
                         </span>
                     </div>
-                </div>-->
+                </div>
 
-                <!--<div class="form-group"
+                <div class="form-group"
                     [ngClass]="{'has-error': (customerForm.get('lastName').touched || customerForm.get('lastName').dirty) && !customerForm.get('lastName').valid }">
                     <label class="col-md-2 control-label" 
                         for="lastNameId">Last Name</label>
@@ -52,7 +52,7 @@
                             </span>
                         </span>
                     </div>
-                </div>-->
+                </div>
 
                 <!--<div formGroupName="emailGroup"
                      [ngClass]="{'has-error': customerForm.get('emailGroup').errors }">
@@ -136,7 +136,7 @@
                     </div>
                 </div>-->
 
-                <!--<div class="form-group"
+                <div class="form-group"
                     [ngClass]="{'has-error': (customerForm.get('rating').touched || 
                                               customerForm.get('rating').dirty) && 
                                               !customerForm.get('rating').valid }">
@@ -156,7 +156,7 @@
                             </span>
                         </span>
                     </div>
-                </div>-->
+                </div>
 
                 <div class="form-group">
                     <div class="col-md-offset-1 col-md-8 checkbox" >
@@ -185,7 +185,7 @@
 
                     <div formArrayName="addresses" *ngFor="let address of addresses.controls; let i=index">
                         <div [formGroupName]="i">
-                            <!--<div class="form-group" >
+                            <div class="form-group" >
                                 <label class="col-md-2 control-label">Address Type</label>
                                 <div class="col-md-8">
                                         <label class="radio-inline">
@@ -201,9 +201,9 @@
                                                 formControlName="addressType">Other
                                         </label>
                                 </div>
-                            </div>-->
+                            </div>
 
-                            <!--<div class="form-group">
+                            <div class="form-group">
                                 <label class="col-md-2 control-label" 
                                     attr.for ="{{ 'street1Id' + i }}">Street: {{ address.get('street1')?.value }}</label>
                                 <div class="col-md-8">
@@ -213,7 +213,7 @@
                                         placeholder="Street address"
                                         formControlName="street1">
                                 </div>
-                            </div>-->
+                            </div>
 
                             <div class="form-group"
                                  [ngClass]="{'has-error': (address.get('rating2').touched ||
@@ -249,7 +249,7 @@
 
 
 
-                           <!--<div class="form-group">
+                            <div class="form-group">
                                 <label class="col-md-2 control-label" 
                                     for="street2Id">Street Address 2</label>
                                 <div class="col-md-8">
@@ -259,9 +259,9 @@
                                         placeholder="Street address (second line)"
                                         formControlName="street2">
                                 </div>
-                            </div>-->
+                            </div>
 
-                            <!--<div class="form-group">
+                            <div class="form-group">
                                 <label class="col-md-2 control-label" 
                                     for="cityId">City, State, Zip Code</label>
                                 <div class="col-md-3">
@@ -293,7 +293,7 @@
                                         placeholder="Zip Code"
                                         formControlName="zip">
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -307,13 +307,13 @@
                                 Save
                             </button>
                         </span>
-                        <!--<span>
+                        <span>
                             <button class="btn btn-default"
                                     type="button"
                                     (click)="populateTestData()">
                                 Test Data
                             </button>
-                        </span>-->
+                        </span>
                     </div>
                 </div>
             </fieldset>
@@ -324,5 +324,5 @@
 <br>Touched: {{ customerForm.touched }}
 <br>Valid: {{ customerForm.valid }}
 <br>Value: {{ customerForm.value | json }}
-<!--<br>Street: {{ addresses.get('0.street1')?.value }}-->
+<br>Street: {{ addresses.get('0.street1')?.value }}
 <br>&nbsp;

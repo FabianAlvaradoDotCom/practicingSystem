@@ -7,17 +7,17 @@ import { QuestionsDataService } from './questions-data.service';///////////////
 import 'rxjs/add/operator/debounceTime';
 
 
-function emailMatcher(c: AbstractControl): { [key: string]: boolean } | null {
-    let emailControl = c.get('email');
-    let confirmControl = c.get('confirmEmail');
-    if (emailControl.pristine || confirmControl.pristine) {
-        return null;
-    }
-    if (emailControl.value === confirmControl.value) {
-        return null;
-    }
-    return { 'match': true };
-}
+//function emailMatcher(c: AbstractControl): { [key: string]: boolean } | null {
+//    let emailControl = c.get('email');
+//    let confirmControl = c.get('confirmEmail');
+//    if (emailControl.pristine || confirmControl.pristine) {
+//        return null;
+//    }
+//    if (emailControl.value === confirmControl.value) {
+//        return null;
+//    }
+//    return { 'match': true };
+//}
 
 function ratingRange(min: number, max: number): ValidatorFn {
     return (c: AbstractControl): { [key: string]: boolean } | null => {
@@ -37,41 +37,41 @@ export class QuestionsComponent implements OnInit {
     questionsAnswers: IQuestionAnswer[];////////////
     customerForm: FormGroup;
 
-    emailMessage: string;
+    //emailMessage: string;
 
     get addresses(): FormArray {
         return <FormArray>this.customerForm.get('addresses');
     }
 
-    private validationMessages = {
-        required: 'Please enter your email address.',
-        pattern: 'Please enter a valid email address.'
-    };
+    //private validationMessages = {
+    //    required: 'Please enter your email address.',
+    //    pattern: 'Please enter a valid email address.'
+    //};
 
     constructor(private fb: FormBuilder, private _questionsAnswers: QuestionsDataService) { }///////////////////////
 
     ngOnInit(): void {
         this.questionsAnswers = this._questionsAnswers.getQuestionAnswer();///////////////
         this.customerForm = this.fb.group({
-            firstName: ['', [Validators.required, Validators.minLength(3)]],
-            lastName: ['', [Validators.required, Validators.maxLength(50)]],
-            emailGroup: this.fb.group({
-                email: ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+')]],
-                confirmEmail: ['', Validators.required],
-            }, { validator: emailMatcher }),
-            phone: '',
-            notification: 'email',
-            rating: ['', ratingRange(1, 5)],
+            //firstName: ['', [Validators.required, Validators.minLength(3)]],
+            //lastName: ['', [Validators.required, Validators.maxLength(50)]],
+            //emailGroup: this.fb.group({
+            //    email: ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+')]],
+            //    confirmEmail: ['', Validators.required],
+            //}, { validator: emailMatcher }),
+            //phone: '',
+            //notification: 'email',
+            //rating: ['', ratingRange(1, 5)],
             sendCatalog: true,
             addresses: this.fb.array([this.buildAddress()])
         });
 
-        this.customerForm.get('notification').valueChanges
-            .subscribe(value => this.setNotification(value));
+        //this.customerForm.get('notification').valueChanges
+        //    .subscribe(value => this.setNotification(value));
 
-        const emailControl = this.customerForm.get('emailGroup.email');
-        emailControl.valueChanges.debounceTime(1000).subscribe(value =>
-            this.setMessage(emailControl));
+        //const emailControl = this.customerForm.get('emailGroup.email');
+        //emailControl.valueChanges.debounceTime(1000).subscribe(value =>
+        //    this.setMessage(emailControl));
     }
 
     addAddress(): void {
@@ -80,44 +80,44 @@ export class QuestionsComponent implements OnInit {
 
     buildAddress(): FormGroup {
         return this.fb.group({
-            addressType: 'home',
-            rating2: ['', ratingRange(1, 5)],
-            street1: '',
-            street2: '',
-            city: '',
-            state: '',
-            zip: ''
+            //addressType: 'home',
+            rating2: ['', ratingRange(1, 5)]//,
+            //street1: '',
+            //street2: '',
+            //city: '',
+            //state: '',
+            //zip: ''
         });
     }
 
-    populateTestData(): void {
-        this.customerForm.patchValue({
-            firstName: 'Jack',
-            lastName: 'Harkness',
-            sendCatalog: false
-        });
-    }
+    //populateTestData(): void {
+    //    this.customerForm.patchValue({
+    //        firstName: 'Jack',
+    //        lastName: 'Harkness',
+    //        sendCatalog: false
+    //    });
+    //}
 
     save(): void {
         console.log(this.customerForm);
         console.log('Saved: ' + JSON.stringify(this.customerForm.value));
     }
 
-    setMessage(c: AbstractControl): void {
-        this.emailMessage = '';
-        if ((c.touched || c.dirty) && c.errors) {
-            this.emailMessage = Object.keys(c.errors).map(key =>
-                this.validationMessages[key]).join(' ');
-        }
-    }
+    //setMessage(c: AbstractControl): void {
+    //    this.emailMessage = '';
+    //    if ((c.touched || c.dirty) && c.errors) {
+    //        this.emailMessage = Object.keys(c.errors).map(key =>
+    //            this.validationMessages[key]).join(' ');
+    //    }
+    //}
 
-    setNotification(notifyVia: string): void {
-        const phoneControl = this.customerForm.get('phone');
-        if (notifyVia === 'text') {
-            phoneControl.setValidators(Validators.required);
-        } else {
-            phoneControl.clearValidators();
-        }
-        phoneControl.updateValueAndValidity();
-    }
+    //setNotification(notifyVia: string): void {
+    //    const phoneControl = this.customerForm.get('phone');
+    //    if (notifyVia === 'text') {
+    //        phoneControl.setValidators(Validators.required);
+    //    } else {
+    //        phoneControl.clearValidators();
+    //    }
+    //    phoneControl.updateValueAndValidity();
+    //}
 }
