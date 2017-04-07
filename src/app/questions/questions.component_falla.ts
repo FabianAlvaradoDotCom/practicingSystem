@@ -5,16 +5,11 @@ import { IQuestionAnswer } from './question-answer'; // DataService Structure de
 import { QuestionsDataService } from './questions-data.service'; // Importing actual data for questions
 
 
-function answerValidation(toCheck: string): ValidatorFn {  // Function with parameters
-   
+function answerValidation(answerSent: string, actualAnswer: string): ValidatorFn {  // Function with parameters
     return (c: AbstractControl): { [key: string]: boolean } | null => {
-
-     
-
-        if (c.value !== toCheck) {
-          
-            return { 'match': true };
-        };        
+        if (answerSent == actualAnswer) {
+            return { 'range': true };
+        };
         return null;
     };
 }
@@ -40,20 +35,20 @@ export class QuestionsComponent implements OnInit {
 
         this.questionsForm = this.myFormBuilder.group({            
             displayQuestions: true,
-            arrayAnswers: this.myFormBuilder.array([this.buildAddress(this.questionsAnswers[0].id)])
+            arrayAnswers: this.myFormBuilder.array([this.buildAddress()])
         });
         this.addAddress(); // To make the questions populate automatically
     }
 
     addAddress(): void {
-        for (let f = 1; f < this.questionsAnswers.length ; f++) {
-            this.arrayAnswers.push(this.buildAddress(this.questionsAnswers[f].id));       
+        for (let f = 0; f < this.questionsAnswers.length - 1; f++) {
+            this.arrayAnswers.push(this.buildAddress());
         }
     }
 
-    buildAddress(valor:any): FormGroup {
+    buildAddress(): FormGroup {
         return this.myFormBuilder.group({           
-            answerField: ['', answerValidation(valor)],
+            answerField: ['', answerValidation("eee", "eee")],
             correctAnswerField: ''
         });
     }

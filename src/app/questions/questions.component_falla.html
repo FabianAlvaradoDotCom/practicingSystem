@@ -30,20 +30,31 @@
                                        attr.for="{{ 'answerId' + i }}">{{questionsAnswers[i].question}}</label>
                                 <div class="col-md-8">
                                     <textarea class="form-control"
-                                              id="{{ 'answerId' + i }}"                                              
+                                              id="{{ 'answerId' + i }}"
+                                              type="number"
                                               formControlName="answerField"></textarea>
 
                                     
                                     <input class="form-control"
                                               id="{{ 'correctAnswerId' + i }}"
-                                              value="{{questionsAnswers[i].id}}"                                      
-                                              type="text"
+                                              value="{{questionsAnswers[i].id}}"
+                                              type="hidden"
                                               formControlName="correctAnswerField">
+                                    
+
+
+
+
+
+
+
+
+
 
                                     <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
                                                          || answerQuestion.get('answerField').dirty) &&
                                                          answerQuestion.get('answerField').errors">
-                                        <span *ngIf="answerQuestion.get('answerField').errors.match">
+                                        <span *ngIf="answerQuestion.get('answerField').errors.range">
                                             {{questionsAnswers[i].errorMessage}}
                                         </span>
                                     </span>
