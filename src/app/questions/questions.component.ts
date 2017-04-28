@@ -9,9 +9,7 @@ function answerValidation(toCheck: string): ValidatorFn {  // Function with para
    
     return (c: AbstractControl): { [key: string]: boolean } | null => {
 
-     
-
-        if (c.value !== toCheck) {
+        if (c.value.replace(/\r?\n|\r/g, " ") !== toCheck.replace(/\r?\n|\r/g, " ")) {
           
             return { 'match': true };
         };        
@@ -40,18 +38,18 @@ export class QuestionsComponent implements OnInit {
 
         this.questionsForm = this.myFormBuilder.group({            
             displayQuestions: true,
-            arrayAnswers: this.myFormBuilder.array([this.buildAddress(this.questionsAnswers[0].answer)])
+            arrayAnswers: this.myFormBuilder.array([this.buildAnswer(this.questionsAnswers[0].answer)])
         });
-        this.addAddress(); // To make the questions populate automatically
+        this.addAnswer(); // To make the questions populate automatically
     }
 
-    addAddress(): void {
+    addAnswer(): void {
         for (let f = 1; f < this.questionsAnswers.length; f++) {
-            this.arrayAnswers.push(this.buildAddress(this.questionsAnswers[f].answer));       
+            this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer));       
         }
     }
 
-    buildAddress(valor:any): FormGroup {
+    buildAnswer(valor:any): FormGroup {
         return this.myFormBuilder.group({           
             answerField: ['', answerValidation(valor)],
             correctAnswerField: ''

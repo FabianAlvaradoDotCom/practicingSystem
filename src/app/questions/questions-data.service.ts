@@ -159,7 +159,7 @@ export class QuestionsDataService {
                 "subject": "PHP",
                 "questionTopic": "MySQL",
                 "question": "What would be the command to show all columns contained in the table \"employees\"?",
-                "answer": " SHOW COLUMNS FROM employees;",
+                "answer": "SHOW COLUMNS FROM employees;",
                 "id": "",
                 "type": "",
                 "placeholder": "",
