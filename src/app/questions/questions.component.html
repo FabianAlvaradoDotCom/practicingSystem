@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+﻿<div class="panel panel-primary">
     <div class="panel-heading">
        Practice the syntaxis!
     </div>
@@ -36,8 +36,8 @@
                                     
                                     <input class="form-control"
                                               id="{{ 'correctAnswerId' + i }}"
-                                              value="{{questionsAnswers[i].id}}"                                      
-                                              type="text"
+                                              value="{{questionsAnswers[i].answer}}"                                      
+                                              type="hidden"
                                               formControlName="correctAnswerField">
 
                                     <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
@@ -47,6 +47,14 @@
                                             {{questionsAnswers[i].errorMessage}}
                                         </span>
                                     </span>
+
+                                  <!--Added to show or hide answer-->
+                                  <label>{{questionsAnswers[i].mostrar? 'Hide': 'Show'}} answer</label>
+                                  <input type="checkbox" (click)="showAnswer(questionsAnswers[i])"/>
+                                  
+                                  <p *ngIf="questionsAnswers[i].mostrar">{{questionsAnswers[i].answer}}</p>
+
+
                                 </div>
                             </div>
                         </div>

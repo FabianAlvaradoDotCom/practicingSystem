@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl, ValidatorFn, FormArray } from '@angular/forms';
 
 import { IQuestionAnswer } from './question-answer'; // DataService Structure defined
@@ -40,14 +40,14 @@ export class QuestionsComponent implements OnInit {
 
         this.questionsForm = this.myFormBuilder.group({            
             displayQuestions: true,
-            arrayAnswers: this.myFormBuilder.array([this.buildAddress(this.questionsAnswers[0].id)])
+            arrayAnswers: this.myFormBuilder.array([this.buildAddress(this.questionsAnswers[0].answer)])
         });
         this.addAddress(); // To make the questions populate automatically
     }
 
     addAddress(): void {
-        for (let f = 1; f < this.questionsAnswers.length ; f++) {
-            this.arrayAnswers.push(this.buildAddress(this.questionsAnswers[f].id));       
+        for (let f = 1; f < this.questionsAnswers.length; f++) {
+            this.arrayAnswers.push(this.buildAddress(this.questionsAnswers[f].answer));       
         }
     }
 
@@ -60,5 +60,10 @@ export class QuestionsComponent implements OnInit {
     save(): void {
         console.log(this.questionsForm);
         console.log('Saved: ' + JSON.stringify(this.questionsForm.value));
-    }    
+    }
+
+    
+    showAnswer(received) {
+        received["mostrar"] = !received["mostrar"];
+    }
 }
