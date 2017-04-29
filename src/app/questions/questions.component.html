@@ -1,14 +1,21 @@
 ﻿<div class="panel panel-primary">
   <div class="panel-heading">
-    Practice the syntaxis!
+    <div class="container">
+      <div class="row">
+        <div>
+          Practice the syntaxis!
+          <p class="lead"><span class="small">The purpose of this app is not to explain the concepts and theory of the coding on these technologies, please refer to the subject matter experts to learn from them. It is instead meant to help you to practice the syntaxis of these languages and frameworks as most likely we do not practice all we learned in a daily basis, so take a few minutes to refresh all knowledge that costed hours and hours of hard work, and challenge yourself to do it faster and better everytime.</span></p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="panel-body container">
-    <form class="form-horizontal row"
+    <form class="form-horizontal row" id="mainContainer"
           novalidate
           (ngSubmit)="save()"
           [formGroup]="questionsForm">
       <fieldset>
-        <div class="form-group">
+        <div class="form-group" [hidden]="!show">
           <div class="checkbox">
             <label>
               <input id="displayQuestions"
@@ -18,17 +25,22 @@
             </label>
           </div>
         </div>
+        
         <div *ngIf="questionsForm.get('displayQuestions').value" id="questionsContainer" class="col-md-8 col offset-md-2">
+          <p>Please write the code following the same JS grammatical rules, you can add new lines and spaces.</p>
+
           <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
             <div [formGroupName]="i">
               <div class="form-group"
                    [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
                                               answerQuestion.get('answerField').dirty) &&
                                               !answerQuestion.get('answerField').valid }">
-                
+
                 <p class="control-label h6 question"
-                       attr.for="{{ 'answerId' + i }}"><span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span>
-                  <strong>{{i+1}}</strong>.- {{questionsAnswers[i].question}}</p>
+                   attr.for="{{ 'answerId' + i }}">
+                  <span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span>
+                  <strong>{{i+1}}</strong>.- {{questionsAnswers[i].question}}
+                </p>
                 <div>
                   <textarea class="form-control codeZone"
                             id="{{ 'answerId' + i }}"
@@ -44,13 +56,11 @@
                       {{questionsAnswers[i].errorMessage}}
                     </span>
                   </span>
-                  <!--Added to show or hide answer-->
                   <div class="smallLabel">
-                    <label>{{questionsAnswers[i].mostrar? 'Hide': 'Show'}} answer</label>
-                    <input type="checkbox" (click)="showAnswer(questionsAnswers[i])" />
+                    <label attr.for="{{ 'showHideAnswer' + i }}">Show answer</label>
+                    <input type="checkbox" (click)="showAnswer(questionsAnswers[i])" id="{{ 'showHideAnswer' + i }}" />
                   </div>
                   <p *ngIf="questionsAnswers[i].mostrar" class="tipAnswer rounded">{{questionsAnswers[i].answer}}</p>
-                  <!--Added to show or hide answer-->
                 </div>
               </div>
             </div>

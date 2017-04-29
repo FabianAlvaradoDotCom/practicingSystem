@@ -105,12 +105,15 @@ div.panel-heading {
 .question{
   clear:both;
 }
-#questionsContainer .codeZone {
-  background-color: #272727; /*------------*/
-  color: #20c820;
-  font-family: monospace;
-  font-size: larger;
-}
+#questionsContainer {
+  padding-top: 20px;
+  .codeZone {
+    background-color: #272727; /*------------*/
+    color: #20c820;
+    font-family: monospace;
+    font-size: larger;
+  }
+} 
 .questionsCompleted {
   padding: 50px;
   font-size: 1.5em;

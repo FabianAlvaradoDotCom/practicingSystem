@@ -18,7 +18,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg2",
+                "class": "bdg1",
                 "questionTopic": "Configuration",
                 "question": "Once you are on this directory: C:\\wamp64\\bin\\mysql\\mysql5.7.14\\bin>, what is the command you type to create the password for the root admin?",
                 "answer": "mysqladmin -u root password",
@@ -29,7 +29,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg3",
+                "class": "bdg1",
                 "questionTopic": "Configuration",
                 "question": "Once you are set as the root admin and on the right directory, what is the command you type to make MySQL prompts for a root admin password when accessing mysql?",
                 "answer": "mysqladmin -u root -p password",
@@ -40,7 +40,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg4",
+                "class": "bdg1",
                 "questionTopic": "Configuration",
                 "question": "What is the command to login MySQL as root user, so it prompts for the password?",
                 "answer": "mysql -u root -p",
@@ -51,7 +51,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg5",
+                "class": "bdg1",
                 "questionTopic": "MySQL",
                 "question": "What is the command to show the existent databases?",
                 "answer": "SHOW DATABASES;",
@@ -62,7 +62,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg6",
+                "class": "bdg1",
                 "questionTopic": "MySQL",
                 "question": "What would be the command to create a database named \"pagos\"?",
                 "answer": "CREATE DATABASE pagos;",
@@ -73,7 +73,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg7",
+                "class": "bdg1",
                 "questionTopic": "MySQL",
                 "question": "What would be the command to select a database named \"entradas\" and start using it?",
                 "answer": "USE entradas;",
@@ -84,7 +84,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg8",
+                "class": "bdg1",
                 "questionTopic": "MySQL",
                 "question": "What would be the command to delete a database named \"altas\"?",
                 "answer": "DROP DATABASE altas;",
@@ -95,7 +95,7 @@ export class QuestionsDataService {
             },
             {
                 "subject": "PHP",
-                "class": "bdg9",
+                "class": "bdg1",
                 "questionTopic": "MySQL",
                 "question": "What would be the command to create an admin user named \"db_admin\" with password \"secret\" for an especific local database named \"db_pagos\"?",
                 "answer": "GRANT ALL PRIVILEGES ON db_pagos.* TO 'db_admin'@'localhost' IDENTIFIED BY 'secret';",

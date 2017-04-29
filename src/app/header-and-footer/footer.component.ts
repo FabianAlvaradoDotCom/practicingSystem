@@ -6,17 +6,10 @@
     template:
 `
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <div class="container">
 <div class="row">
 <footer>
-    <p>&copy; Company 2017</p>
+    <p>&copy; Fabian Alvarado 2017</p>
 </footer>
 </div>
 </div>
