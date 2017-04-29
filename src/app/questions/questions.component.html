@@ -1,84 +1,83 @@
 ﻿<div class="panel panel-primary">
-    <div class="panel-heading">
-       Practice the syntaxis!
-    </div>
-
-    <div class="panel-body">
-        <form class="form-horizontal"
-              novalidate
-              (ngSubmit)="save()"
-              [formGroup]="questionsForm">
-            <fieldset>
-                <div class="form-group">
-                    <div class="col-md-offset-1 col-md-8 checkbox">
-                        <label>
-                            <input id="displayQuestions"
-                                   type="checkbox"
-                                   formControlName="displayQuestions">
-                            Display questions
-                        </label>
-                    </div>
-                </div>
-                <div *ngIf="questionsForm.get('displayQuestions').value">
-                    <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
-                        <div [formGroupName]="i">
-                            <div class="form-group"
-                                 [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
+  <div class="panel-heading">
+    Practice the syntaxis!
+  </div>
+  <div class="panel-body container">
+    <form class="form-horizontal row"
+          novalidate
+          (ngSubmit)="save()"
+          [formGroup]="questionsForm">
+      <fieldset>
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input id="displayQuestions"
+                     type="checkbox"
+                     formControlName="displayQuestions">
+              Display questions
+            </label>
+          </div>
+        </div>
+        <div *ngIf="questionsForm.get('displayQuestions').value" id="questionsContainer" class="col-md-8 col offset-md-2">
+          <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
+            <div [formGroupName]="i">
+              <div class="form-group"
+                   [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
                                               answerQuestion.get('answerField').dirty) &&
                                               !answerQuestion.get('answerField').valid }">
-                                <label class="col-md-12 control-label"
-                                       attr.for="{{ 'answerId' + i }}">{{questionsAnswers[i].question}}</label>
-                                <div class="col-md-8">
-                                    <textarea class="form-control"
-                                              id="{{ 'answerId' + i }}"                                              
-                                              formControlName="answerField"></textarea>
-
-                                    
-                                    <input class="form-control"
-                                              id="{{ 'correctAnswerId' + i }}"
-                                              value="{{questionsAnswers[i].answer}}"                                      
-                                              type="hidden"
-                                              formControlName="correctAnswerField">
-
-                                    <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
+                
+                <p class="control-label h6 question"
+                       attr.for="{{ 'answerId' + i }}"><span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span>
+                  <strong>{{i+1}}</strong>.- {{questionsAnswers[i].question}}</p>
+                <div>
+                  <textarea class="form-control codeZone"
+                            id="{{ 'answerId' + i }}"
+                            formControlName="answerField"></textarea>
+                  <input id="{{ 'correctAnswerId' + i }}"
+                         value="{{questionsAnswers[i].answer}}"
+                         type="hidden"
+                         formControlName="correctAnswerField">
+                  <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
                                                          || answerQuestion.get('answerField').dirty) &&
                                                          answerQuestion.get('answerField').errors">
-                                        <span *ngIf="answerQuestion.get('answerField').errors.match">
-                                            {{questionsAnswers[i].errorMessage}}
-                                        </span>
-                                    </span>
-
-                                  <!--Added to show or hide answer-->
-                                  <label>{{questionsAnswers[i].mostrar? 'Hide': 'Show'}} answer</label>
-                                  <input type="checkbox" (click)="showAnswer(questionsAnswers[i])"/>
-                                  
-                                  <p *ngIf="questionsAnswers[i].mostrar">{{questionsAnswers[i].answer}}</p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <span *ngIf="answerQuestion.get('answerField').errors.match">
+                      {{questionsAnswers[i].errorMessage}}
+                    </span>
+                  </span>
+                  <!--Added to show or hide answer-->
+                  <div class="smallLabel">
+                    <label>{{questionsAnswers[i].mostrar? 'Hide': 'Show'}} answer</label>
+                    <input type="checkbox" (click)="showAnswer(questionsAnswers[i])" />
+                  </div>
+                  <p *ngIf="questionsAnswers[i].mostrar" class="tipAnswer rounded">{{questionsAnswers[i].answer}}</p>
+                  <!--Added to show or hide answer-->
                 </div>
-
-                <div class="form-group">
-                    <div class="col-md-4 col-md-offset-2">
-                        <span>
-                            <button class="btn btn-primary"
-                                    type="submit"
-                                    [disabled]="!questionsForm.valid">
-                                Save
-                            </button>
-                        </span>
-
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+              </div>
+            </div>
+          </div>
+          <div [hidden]="!questionsForm.valid" class="alert alert-success questionsCompleted" role="alert">
+            <strong>Well done!</strong> You successfully completed all questions of the quiz.
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-4 col-md-offset-2">
+            <span>
+              <button [hidden]="!show" class="btn btn-primary"
+                      type="submit"
+                      [disabled]="!questionsForm.valid">
+                Save
+              </button>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </div>
-<br>Dirty: {{ questionsForm.dirty }} 
+<!--
+<br>Dirty: {{ questionsForm.dirty }}
 <br>Touched: {{ questionsForm.touched }}
 <br>Valid: {{ questionsForm.valid }}
 <br>Value: {{ questionsForm.value | json }}
 <br>&nbsp;
+    -->

@@ -26,6 +26,7 @@ export class QuestionsComponent implements OnInit {
 
     questionsAnswers: IQuestionAnswer[];// Data service added using an interface
     questionsForm: FormGroup;
+    show: boolean = false;  // Not used, just for angular not to launch error.
 
     get arrayAnswers(): FormArray {
         return <FormArray>this.questionsForm.get('arrayAnswers');
