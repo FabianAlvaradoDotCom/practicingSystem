@@ -4,18 +4,27 @@ import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl, Valid
 import { IQuestionAnswer } from './question-answer'; // DataService Structure defined
 import { QuestionsDataService } from './questions-data.service'; // Importing actual data for questions
 
-function answerValidation(toCheck: string): ValidatorFn {  // Function with parameters
+function answerValidation(toCheck: string, cntType): ValidatorFn {  // Function with parameters
     return (c: AbstractControl): { [key: string]: boolean } | null => {
-        if ((c.value.replace(/\r?\n|\r/g, " ").split(" ").join("") !== toCheck.replace(/\r?\n|\r/g, " ").split(" ").join("")) || (cleanSpace(c.value).split(" ").length !== cleanSpace(toCheck).split(" ").length)) {
+
+       toCheck = convertToLower(toCheck, cntType); // Verifies the if answer in the repository is code or text, based on that converts to lower
+       var enteredData = convertToLower(c.value, cntType);// Verifies the if answer in the repository is code or text, based on that converts the user entered data to lower
+
+      
+  
+
+        
+        if (!compareWordByWord(toCheck, enteredData)) {
+            
             return { 'match': true };
         };
         return null;
     };
 };
 
-function cleanSpace(val): string {
-    val = val.replace(/\r?\n|\r/g, " ");
-    val = val.replace(/               /g, " ");
+function cleanSpace(val): string {  
+    val = val.replace(/\r?\n|\r/g, " "); // Converts breaklines to spaces
+    val = val.replace(/               /g, " "); // Converts multi-spaces to single-spaces
     val = val.replace(/              /g, " ");
     val = val.replace(/             /g, " ");
     val = val.replace(/            /g, " ");
@@ -29,8 +38,66 @@ function cleanSpace(val): string {
     val = val.replace(/    /g, " ");
     val = val.replace(/   /g, " ");
     val = val.replace(/  /g, " ");
+    val = val.replace(/ \(/g, "("); // Removes the spaces before and after left and right parenthesis and curly braces
+    val = val.replace(/ \)/g, ")");
+    val = val.replace(/\( /g, "(");
+    val = val.replace(/\) /g, ")");
+    val = val.replace(/ \{/g, "{");
+    val = val.replace(/ \}/g, "}");
+    val = val.replace(/\{ /g, "{");
+    val = val.replace(/\} /g, "}");
+
+    val = val.replace(/\, /g, ",");
+    val = val.replace(/\ ,/g, ",");
+
+    val = val.replace(/\: /g, ":");
+    val = val.replace(/\ :/g, ":");
+
+    val = val.replace(/\; /g, ";");
+    val = val.replace(/\ ;/g, ";");
+
+    val = val.replace(/\+ /g, "+");
+    val = val.replace(/\ +/g, "+");
+
+    val = val.replace(/\* /g, "*");
+    val = val.replace(/\ */g, "*");
+
+    val = val.replace(/\- /g, "-");
+    val = val.replace(/\ -/g, "-");
+
+    val = val.replace(/\% /g, "%");
+    val = val.replace(/\ %/g, "%");
+
+    val = val.replace(/\& /g, "&");
+    val = val.replace(/\ &/g, "&");
+
+    val = val.replace(/\| /g, "|");
+    val = val.replace(/\ |/g, "|");
+
     return val;
 };
+
+function convertToLower(val, contType) {  // If the answer is set to text type, it converts all to lowercase, not if it is code
+    if (contType != "code") {
+        val = val.toLowerCase();
+        return val;
+    } else {
+        return val;
+    }    
+}
+
+
+function compareWordByWord(answerInRepo, answerEntered) {
+    var arrayInRepo = cleanSpace(answerInRepo).split(" ");
+    var arrayEntered = cleanSpace(answerEntered).split(" ");
+
+    for (let i = 0; i < arrayInRepo.length; i++){
+        if (arrayInRepo[i] != arrayEntered[i]) {
+            return false;
+        }
+    }
+    return true;
+}
 
 @Component({
     moduleId: module.id,
@@ -49,18 +116,18 @@ export class QuestionsComponent implements OnInit {
         this.questionsAnswers = this._questionsAnswers.getQuestionAnswer();///////////////
         this.questionsForm = this.myFormBuilder.group({
             displayQuestions: true,
-            arrayAnswers: this.myFormBuilder.array([this.buildAnswer(this.questionsAnswers[0].answer)])
+            arrayAnswers: this.myFormBuilder.array([this.buildAnswer(this.questionsAnswers[0].answer, this.questionsAnswers[0].contentType)])
         });
         this.addAnswer(); // To make the questions populate automatically
     }
     addAnswer(): void {
         for (let f = 1; f < this.questionsAnswers.length; f++) {
-            this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer));
+            this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer, this.questionsAnswers[f].contentType));
         }
     }
-    buildAnswer(valor: any): FormGroup {
+    buildAnswer(valor: any, contentType: any): FormGroup {
         return this.myFormBuilder.group({
-            answerField: ['', answerValidation(valor)],
+            answerField: ['', answerValidation(valor, contentType)],
             correctAnswerField: ''
         });
     }

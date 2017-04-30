@@ -11,6 +11,7 @@
     id: string;
     rows: number;
     type: string;
+    contentType: string;
     placeholder: string;    
     errorMessage: string;
 }

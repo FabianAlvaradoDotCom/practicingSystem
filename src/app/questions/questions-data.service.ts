@@ -18,6 +18,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             },
@@ -34,6 +35,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             },
@@ -50,6 +52,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             },
@@ -66,6 +69,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "____ Data Types",
                 "errorMessage": "Wrong answer, verify capital letters"
             },
@@ -82,6 +86,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Tip, there are 6"
             },
@@ -98,6 +103,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             },
@@ -114,6 +120,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             },
@@ -130,6 +137,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             },
@@ -146,6 +154,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Tip: C, C, D, E, E, N, W"
             },
@@ -162,6 +171,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Tip: A, B, D, M, N, O, S"
             },
@@ -173,11 +183,12 @@ export class QuestionsDataService {
                 "questionPart2": "Create the var \"varCompare\" = 10. Then write the code to compare through a Switch statement the var \"varCompare\" against 2 values to print in the console:",
                 "questionPart3": "-\"Option1\" if equals to 5.",
                 "questionPart4": "-Or printing \"Option2\" if equals to 9.",
-                "questionPart5": "-Or a third option as default, printing in the console \"Option3\".",                
+                "questionPart5": "-Or a third option as default, printing in the console \"Option3\".",
                 "answer": "var varCompare = 10; \nswitch (varCompare) { \ncase 5: \nconsole.log(\"Option1\"); \nbreak; \ncase 9: \nconsole.log(\"Option2\"); \nbreak; \ndefault: \nconsole.log(\"Option3\"); \nbreak; \n}",
                 "id": "",
                 "rows": 12,
                 "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
             },
@@ -194,6 +205,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             }, {
@@ -209,6 +221,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "Javascript _________",
                 "errorMessage": "Wrong answer"
             }, {
@@ -224,6 +237,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "True or false"
             }, {
@@ -239,6 +253,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "Yes or no",
                 "errorMessage": "True or false"
             }, {
@@ -254,6 +269,7 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 2,
                 "type": "",
+                "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "True or false"
             }
