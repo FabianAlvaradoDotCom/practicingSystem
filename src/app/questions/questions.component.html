@@ -35,16 +35,17 @@
                    [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
                                               answerQuestion.get('answerField').dirty) &&
                                               !answerQuestion.get('answerField').valid }">
-
-                <p class="control-label h6 question"
-                   attr.for="{{ 'answerId' + i }}">
-                  <span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span>
+                <span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span> <span class="questionsTopic">{{questionsAnswers[i].questionTopic}}</span><br />
+                <label class="control-label h6 question"
+                   attr.for="{{ 'answerId' + i }}">                  
                   <strong>{{i+1}}</strong>.- {{questionsAnswers[i].question}}
-                </p>
+                </label>
                 <div>
                   <textarea class="form-control codeZone"
                             id="{{ 'answerId' + i }}"
-                            formControlName="answerField"></textarea>
+                            formControlName="answerField"
+                            rows="{{questionsAnswers[i].rows}}"
+                            placeholder="{{questionsAnswers[i].placeholder}}"></textarea>
                   <input id="{{ 'correctAnswerId' + i }}"
                          value="{{questionsAnswers[i].answer}}"
                          type="hidden"
@@ -64,6 +65,7 @@
                 </div>
               </div>
             </div>
+            <br />
           </div>
           <div [hidden]="!questionsForm.valid" class="alert alert-success questionsCompleted" role="alert">
             <strong>Well done!</strong> You successfully completed all questions of the quiz.
