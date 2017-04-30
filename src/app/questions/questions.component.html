@@ -38,7 +38,15 @@
                 <span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span> <span class="questionsTopic">{{questionsAnswers[i].questionTopic}}</span><br />
                 <label class="control-label h6 question"
                        attr.for="{{ 'answerId' + i }}">
-                  <strong>{{i+1}}</strong>.- {{questionsAnswers[i].question}}
+                  <span><strong>{{i+1}}</strong>.- {{questionsAnswers[i].questionPart1}}</span>
+                  <br *ngIf="questionsAnswers[i].questionPart2 != ''" />
+                  <span *ngIf="questionsAnswers[i].questionPart2 != ''">{{questionsAnswers[i].questionPart2}}</span>
+                  <br *ngIf="questionsAnswers[i].questionPart3 != ''" />
+                  <span *ngIf="questionsAnswers[i].questionPart3 != ''">{{questionsAnswers[i].questionPart3}}</span>
+                  <br *ngIf="questionsAnswers[i].questionPart4 != ''" />
+                  <span *ngIf="questionsAnswers[i].questionPart4 != ''">{{questionsAnswers[i].questionPart4}}</span>
+                  <br *ngIf="questionsAnswers[i].questionPart5 != ''" />
+                  <span *ngIf="questionsAnswers[i].questionPart5 != ''">{{questionsAnswers[i].questionPart5}}</span>
                 </label>
                 <div>
                   <textarea class="form-control codeZone"
