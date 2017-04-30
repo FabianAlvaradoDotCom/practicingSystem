@@ -25,7 +25,7 @@
             </label>
           </div>
         </div>
-        
+
         <div *ngIf="questionsForm.get('displayQuestions').value" id="questionsContainer" class="col-md-8 col offset-md-2">
           <p>Please write the code following the same JS grammatical rules, you can add new lines and spaces.</p>
 
@@ -37,7 +37,7 @@
                                               !answerQuestion.get('answerField').valid }">
                 <span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span> <span class="questionsTopic">{{questionsAnswers[i].questionTopic}}</span><br />
                 <label class="control-label h6 question"
-                   attr.for="{{ 'answerId' + i }}">                  
+                       attr.for="{{ 'answerId' + i }}">
                   <strong>{{i+1}}</strong>.- {{questionsAnswers[i].question}}
                 </label>
                 <div>
@@ -61,7 +61,7 @@
                     <label attr.for="{{ 'showHideAnswer' + i }}">Show answer</label>
                     <input type="checkbox" (click)="showAnswer(questionsAnswers[i])" id="{{ 'showHideAnswer' + i }}" />
                   </div>
-                  <p *ngIf="questionsAnswers[i].mostrar" class="tipAnswer rounded">{{questionsAnswers[i].answer}}</p>
+                  <pre *ngIf="questionsAnswers[i].mostrar" class="tipAnswer rounded">{{questionsAnswers[i].answer}}</pre>
                 </div>
               </div>
             </div>
