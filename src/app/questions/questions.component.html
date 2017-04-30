@@ -28,7 +28,6 @@
 
         <div *ngIf="questionsForm.get('displayQuestions').value" id="questionsContainer" class="col-md-8 col offset-md-2">
           <p>Please write the code following the same JS grammatical rules, you can add new lines and spaces.</p>
-
           <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
             <div [formGroupName]="i">
               <div class="form-group"
@@ -49,7 +48,8 @@
                   <span *ngIf="questionsAnswers[i].questionPart5 != ''">{{questionsAnswers[i].questionPart5}}</span>
                 </label>
                 <div>
-                  <textarea class="form-control codeZone"
+                  <textarea class="form-control"
+                            [ngClass]="questionsAnswers[i].contentType == 'code'? 'codeZone': 'textZone'"
                             id="{{ 'answerId' + i }}"
                             formControlName="answerField"
                             rows="{{questionsAnswers[i].rows}}"

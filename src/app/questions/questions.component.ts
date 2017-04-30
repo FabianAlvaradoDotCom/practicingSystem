@@ -9,13 +9,8 @@ function answerValidation(toCheck: string, cntType): ValidatorFn {  // Function 
 
        toCheck = convertToLower(toCheck, cntType); // Verifies the if answer in the repository is code or text, based on that converts to lower
        var enteredData = convertToLower(c.value, cntType);// Verifies the if answer in the repository is code or text, based on that converts the user entered data to lower
-
-      
-  
-
         
-        if (!compareWordByWord(toCheck, enteredData)) {
-            
+        if (!compareWordByWord(toCheck, enteredData)) {            
             return { 'match': true };
         };
         return null;
@@ -83,9 +78,8 @@ function convertToLower(val, contType) {  // If the answer is set to text type, 
         return val;
     } else {
         return val;
-    }    
-}
-
+    };
+};
 
 function compareWordByWord(answerInRepo, answerEntered) {
     var arrayInRepo = cleanSpace(answerInRepo).split(" ");
@@ -94,10 +88,10 @@ function compareWordByWord(answerInRepo, answerEntered) {
     for (let i = 0; i < arrayInRepo.length; i++){
         if (arrayInRepo[i] != arrayEntered[i]) {
             return false;
-        }
-    }
+        };
+    };
     return true;
-}
+};
 
 @Component({
     moduleId: module.id,
