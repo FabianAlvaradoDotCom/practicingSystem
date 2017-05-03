@@ -4,12 +4,27 @@
       <div class="row">
         <div>
           Practice the syntaxis!
-          <p class="lead"><span class="small">The purpose of this app is not to explain the concepts and theory of the coding on these technologies, please refer to the subject matter experts to learn from them. It is instead meant to help you to practice the syntaxis of these languages and frameworks as most likely we do not practice all we learned in a daily basis, so take a few minutes to refresh all knowledge that costed hours and hours of hard work, and challenge yourself to do it faster and better everytime.</span></p>
+          <p class="lead"><span class="small">The purpose of this app is not to explain the concepts and theory of the coding on these technologies, please refer to the subject matter experts to learn from them. It is instead meant to help you to practice the syntax of these languages and frameworks as most likely we do not practice all we learned in a daily basis, so take a few minutes to refresh all knowledge that costed hours and hours of hard work, and challenge yourself to do it faster and better everytime.</span></p>
         </div>
       </div>
     </div>
   </div>
   <div class="panel-body container">
+    <!--<form [hidden]="show">
+      <div class="form-group">
+        <div class="checkbox">
+          <label><span class="bdg4">JS</span>
+            <input id="javascript"
+                   type="checkbox" (click)="showSubjects('JS')">{{js}}
+          </label>
+          <label>
+            <span class="bdg6">StoryLine</span>
+            <input id="storyline"
+                   type="checkbox" (click)="showSubjects('StoryLine')">{{storyline}}
+          </label>
+        </div>
+      </div>
+    </form>-->
     <form class="form-horizontal row" id="mainContainer"
           novalidate
           (ngSubmit)="save()"
@@ -22,15 +37,14 @@
                      type="checkbox"
                      formControlName="displayQuestions">
               Display questions
-            </label>
+            </label>           
           </div>
         </div>
-
-        <div *ngIf="questionsForm.get('displayQuestions').value" id="questionsContainer" class="col-md-8 col offset-md-2">
+        <div id="questionsContainer" class="col-md-8 col offset-md-2" *ngIf="questionsForm.get('displayQuestions').value">
           <p>Please write the code following the same JS grammatical rules, you can add new lines and spaces.</p>
           <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
             <div [formGroupName]="i">
-              <div class="form-group"
+              <div class="form-group"                   
                    [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
                                               answerQuestion.get('answerField').dirty) &&
                                               !answerQuestion.get('answerField').valid }">

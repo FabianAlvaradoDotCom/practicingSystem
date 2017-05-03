@@ -43,31 +43,37 @@ function cleanSpace(val): string {
     val = val.replace(/\} /g, "}");
 
     val = val.replace(/\, /g, ",");
-    val = val.replace(/\ ,/g, ",");
+    val = val.replace(/ \,/g, ",");
 
     val = val.replace(/\: /g, ":");
-    val = val.replace(/\ :/g, ":");
+    val = val.replace(/ \:/g, ":");
 
     val = val.replace(/\; /g, ";");
-    val = val.replace(/\ ;/g, ";");
+    val = val.replace(/ \;/g, ";");
 
     val = val.replace(/\+ /g, "+");
-    val = val.replace(/\ +/g, "+");
+    val = val.replace(/ \+/g, "+");
 
     val = val.replace(/\* /g, "*");
-    val = val.replace(/\ */g, "*");
+    val = val.replace(/ \*/g, "*");
 
     val = val.replace(/\- /g, "-");
-    val = val.replace(/\ -/g, "-");
+    val = val.replace(/ \-/g, "-");
 
     val = val.replace(/\% /g, "%");
-    val = val.replace(/\ %/g, "%");
+    val = val.replace(/ \%/g, "%");
 
     val = val.replace(/\& /g, "&");
-    val = val.replace(/\ &/g, "&");
+    val = val.replace(/ \&/g, "&");
 
     val = val.replace(/\| /g, "|");
-    val = val.replace(/\ |/g, "|");
+    val = val.replace(/ \|/g, "|");
+
+    val = val.replace(/\< /g, "<");
+    val = val.replace(/ \</g, "<");
+
+    val = val.replace(/\> /g, ">");
+    val = val.replace(/ \>/g, ">");
 
     return val;
 };
@@ -102,6 +108,9 @@ export class QuestionsComponent implements OnInit {
     questionsAnswers: IQuestionAnswer[];// Data service added using an interface
     questionsForm: FormGroup;
     show: boolean = false;  // Not used, just for angular not to launch error.
+    js: string = "";
+    storyline: string = "";
+
     get arrayAnswers(): FormArray {
         return <FormArray>this.questionsForm.get('arrayAnswers');
     }
@@ -109,13 +118,13 @@ export class QuestionsComponent implements OnInit {
     ngOnInit(): void {
         this.questionsAnswers = this._questionsAnswers.getQuestionAnswer();///////////////
         this.questionsForm = this.myFormBuilder.group({
-            displayQuestions: true,
-            arrayAnswers: this.myFormBuilder.array([this.buildAnswer(this.questionsAnswers[0].answer, this.questionsAnswers[0].contentType)])
+            displayQuestions: true,          
+            arrayAnswers: this.myFormBuilder.array([])
         });
         this.addAnswer(); // To make the questions populate automatically
     }
     addAnswer(): void {
-        for (let f = 1; f < this.questionsAnswers.length; f++) {
+        for (let f = 0; f < this.questionsAnswers.length; f++) {
             this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer, this.questionsAnswers[f].contentType));
         }
     }
@@ -131,5 +140,14 @@ export class QuestionsComponent implements OnInit {
     }
     showAnswer(received) {
         received["mostrar"] = !received["mostrar"];
-    }
+    };
+    showSubjects(subject: string) {        
+        switch (subject) {
+            case 'JS':
+                this.js = this.js == "" ? 'JS' : "";
+                break;
+            case 'StoryLine':
+                this.storyline = this.storyline == "" ? "StoryLine" : "";
+        }
+    };
 }
