@@ -75,6 +75,9 @@ function cleanSpace(val): string {
     val = val.replace(/\> /g, ">");
     val = val.replace(/ \>/g, ">");
 
+    val = val.replace(/\= /g, "=");
+    val = val.replace(/ \=/g, "=");
+
     return val;
 };
 

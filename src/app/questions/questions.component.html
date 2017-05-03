@@ -78,6 +78,10 @@
                     <span *ngIf="answerQuestion.get('answerField').errors.match">
                       {{questionsAnswers[i].errorMessage}}
                     </span>
+                    
+                  </span>
+                  <span *ngIf="(answerQuestion.get('answerField').touched && answerQuestion.get('answerField').dirty) && !answerQuestion.get('answerField').errors" class="text-success">
+                    Complete!
                   </span>
                   <div class="smallLabel">
                     <label attr.for="{{ 'showHideAnswer' + i }}">Show answer</label>
