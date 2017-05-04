@@ -6,150 +6,6 @@ export class QuestionsDataService {
     getQuestionAnswer(): IQuestionAnswer[] {
         return [
             {
-                "subject": "CSS",
-                "questionTopic": "Selectors",
-                "class": "bdg1",
-                "questionPart1": "Describe the Descendant Selectors, then in the next line write an example of a descendant selector, any \"p\" inside of any \"div\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "The elements in the selector are separated by a blank space. This means that the specified\nCSS styles inside the curly braces will be applied to the last element of the right that\nis inside of the element at the left and so on. Example of Descendant Selector: \ndiv p { color: #ff0000;}",
-                "id": "",
-                "rows": 6,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Selectors",
-                "class": "bdg1",
-                "questionPart1": "Describe the Child Selectors, then in the next line write an example of a child selector, any \"p\" directly child of any \"div\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "The elements in the selector are separated by a greater than symbol. This means that the\nspecified CSS styles inside the curly braces will be applied to the last element of the right\nthat is directly a child of the element at the left and so on. Example of Child Selector: \ndiv > p { color: #ff0000;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and make red font all \"p\" elements that have the \"class\" attribute",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "p[class]{color:red;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and make red font all \"span\" elements that have exactly the \"id\" attribute equals to \"container\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "span[id=\"container\"]{color:red;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and make red font all \"div\" elements that have exactly the \"id\" attribute equals to \"container\" and have exactly the \"class\" attribute equals to \"red\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "div[id=\"container\"][class=\"red\"]{color:red;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and make red font all \"li\" elements that have several classes separated by whitespace and from them one exactly matches the \"class\" equals to \"col-1\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "li[class~=\"col-1\"]{color:red;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer - For tilde ~ symbol, use alt + 126"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and make red font all \"a\" elements whose \"href\" attribute value begins exactly with the string \"dev.www.\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "a[href^=\"dev.www.\"]{color:red;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer - For Circumflex accent or Caret ^ symbol, use alt + 94"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and display none all \"img\" elements whose \"src\" attribute value ends exactly with the string \".svg\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "img[src$=\".svg\"]{display:none;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "CSS",
-                "questionTopic": "Attribute Selectors",
-                "class": "bdg1",
-                "questionPart1": "Write the code to select and make red font all \"a\" elements whose \"href\" attribute value contains at least one instance of exactly the substring \"/assets/pdf/\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "a[href*=\"/assets/pdf/\"]{color:red;}",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer - For Circumflex accent or Caret ^ symbol, use alt + 94"
-            },{
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -199,7 +55,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -215,7 +71,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -231,7 +87,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -247,7 +103,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -280,7 +136,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -296,7 +152,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -448,7 +304,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -464,7 +320,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Javascript _________",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -480,7 +336,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "True or false"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -496,7 +352,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Yes or no",
                 "errorMessage": "True or false"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -512,7 +368,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "True or false"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -528,7 +384,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -544,7 +400,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -560,7 +416,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -576,7 +432,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -592,7 +448,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -608,7 +464,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -624,7 +480,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -640,7 +496,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -656,7 +512,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -672,7 +528,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -688,7 +544,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -720,7 +576,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -736,7 +592,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -752,7 +608,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -768,7 +624,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -784,7 +640,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -800,7 +656,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -816,7 +672,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -832,7 +688,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -848,7 +704,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -864,7 +720,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -880,7 +736,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -930,7 +786,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "A, B(if defined with the new keyword), D, F, M, N(if defined with the new keyword), O, S(if defined with the new keyword)"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -946,7 +802,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -962,7 +818,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -978,7 +834,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -994,7 +850,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1010,7 +866,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1026,7 +882,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1058,7 +914,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer, do not forget the PANEL word"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1074,7 +930,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer, do not forget the PANEL word"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1090,7 +946,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1106,7 +962,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "By adding a ___ _____ and _________ ____",
                 "errorMessage": "By adding a ___ _____ and _________ ____"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1122,7 +978,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "____ ____ and _____ ____",
                 "errorMessage": "____ ____ and _____ ____"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1138,7 +994,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "In the ________ tab by changing the _______ option",
                 "errorMessage": "In the ________ tab by changing the _______ option"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1154,7 +1010,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "By clicking on ______ tab and then Convert to ________",
                 "errorMessage": "By clicking on ______ tab and then Convert to ________"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1170,7 +1026,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "By editing the ________ Master in ____ tab",
                 "errorMessage": "By editing the ________ Master in ____ tab"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1186,7 +1042,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "In the _____ ____ panel first select the scene that contains the questions, then in the ______ tab click on New Slide. The Insert Slides window will pop up, from there select ________ tab and then select ______ ______ slide",
                 "errorMessage": "In the _____ ____ panel first select the scene that contains the questions, then in the ______ tab click on New Slide. The Insert Slides window will pop up, from there select ________ tab and then select ______ ______ slide"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1202,7 +1058,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "____ > _______ > ___ > _________ and ________ > ________",
                 "errorMessage": "____ > _______ > ___ > _________ and ________ > ________"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1234,7 +1090,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "A________ U___ D___, I_______ T_________, S_______ and S__________, P____ P__________, I_____________ P_______",
                 "errorMessage": "A________ U___ D___, I_______ T_________, S_______ and S__________, P____ P__________, I_____________ P_______"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1250,7 +1106,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1266,7 +1122,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1282,7 +1138,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1298,7 +1154,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1314,7 +1170,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1330,7 +1186,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1346,7 +1202,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1362,7 +1218,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1378,7 +1234,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1394,7 +1250,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1410,7 +1266,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1426,7 +1282,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Remeber is the equivalen in mm to approximately 40px to 50px",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1442,7 +1298,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1458,7 +1314,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1474,7 +1330,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1490,7 +1346,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1506,7 +1362,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1538,7 +1394,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1554,7 +1410,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1570,7 +1426,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1586,7 +1442,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1602,7 +1458,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "_____ ___ [device]",
                 "errorMessage": "_____ ___ [device]"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1634,7 +1490,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1650,7 +1506,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1666,7 +1522,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1682,7 +1538,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1698,7 +1554,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1714,7 +1570,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1730,7 +1586,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1746,7 +1602,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1778,7 +1634,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1794,7 +1650,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1826,7 +1682,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1842,7 +1698,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1858,7 +1714,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1874,7 +1730,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1890,7 +1746,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1906,7 +1762,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1922,7 +1778,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1938,7 +1794,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -1954,7 +1810,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -1970,7 +1826,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -1986,7 +1842,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2018,7 +1874,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2027,102 +1883,22 @@ export class QuestionsDataService {
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "myApp.filter('convertToString', function () {\n return function (someInput) {\n    switch (someInput) {\n        case 1:\n            return \"One\";\n        case 2:\n            return \"Two\";\n        case 3:\n            return \"Three\";\n    };\n  };\n});",
+                "answer": "myApp.filter('someInput', function () {\n return function (someInput) {\n    switch (someInput) {\n        case 1:\n            return \"One\";\n        case 2:\n            return \"Two\";\n        case 3:\n            return \"Three\";\n    };\n  };\n});",
                 "id": "",
                 "rows": 13,
                 "type": "",
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }/*, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
-                "questionPart1": "How do you use the just created filter in your view? Write the code to display the content of a var named number that will use the filter",
+                "questionPart1": "",
                 "questionPart2": "",
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "<span> {{number | convertToString}}</span>",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "ngModel",
-                "class": "bdg10",
-                "questionPart1": "What are the elements that can use the ngModel directive?",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "Input, Select and Textarea",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "ngModel",
-                "class": "bdg10",
-                "questionPart1": "Explain how the ngModel directive works",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "The ngModel directive hooks up two way binding between the html form field in the view\nand some container on the scope (a variable for instance). It is also able to pass data\nfrom the input element to other elements in the view without passing the data first to the\nscope, the property will be created automatically",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "ngModel",
-                "class": "bdg10",
-                "questionPart1": "Write an example of using ngModel, binding data to \"varInMyScope\"",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "<input type=\"text\" ng-model=\"varInMyScope\" />",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "What is the regular HTML attribute we need to add to an element so Angular can implement validation?",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "required",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "What is the directive used to implement an specific pattern in the content of an input?",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "ng-pattern",
                 "answer": "",
                 "id": "",
                 "rows": 2,
@@ -2130,105 +1906,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "Write the Angular code so an input element specifies a that the date should be entered in this format: mm/dd/yyyy",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "<input type=\"text\" required ng-pattern=\"/\\d\\d/\\d\\d/\\d\\d\\d\\d/\" />",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "Write the code you need to implement in the controller to validate the data of a form",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "if (newEventForm.$valid) {\n   ...\n};",
-                "id": "",
-                "rows": 4,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "What are the 4 properties we can use to know the validity of a form?",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "Dirty, Pristine, Valid and Invalid",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "",
-                "placeholder": "",
-                "errorMessage": "D, P, V and I"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "What is the attribute that a form needs in order to check validity?",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "Name attribute",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "",
-                "placeholder": "____ attribute",
-                "errorMessage": "____ attribute"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "List all necessary items to validate a form ang give a feedback to the user, list them by order of appearance",
-                "questionPart2": "",
-                "questionPart3": "",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "Styles, Form Name, ngModel, ngPattern, Required attribute, ngClick, .$valid Form",
-                "id": "",
-                "rows": 2,
-                "type": "",
-                "contentType": "",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            },{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
-                "class": "bdg10",
-                "questionPart1": "Write the necesary code to validate a form, both, the code in the view and the code in the controller",
-                "questionPart2": "In the View: Style for invalid class, form, save button.",
-                "questionPart3": "In the Controller: Function to execute if valid",
-                "questionPart4": "",
-                "questionPart5": "",
-                "answer": "<!--View-->\n<style>\n    input.ng-invalid.ng-dirty {\n        background-color: pink;\n    }\n</style>\n<form name=\"registryFormName\">\n    <input type=\"text\"placeholder=\"Format (mm/dd/yy)...\"\n           ng-model=\"personData.date\"\n           ng-pattern=\"/\d\d/\d\d/\d\d\d\d/\"\n           required />\n    <button type=\"submit\" class=\"btn btn-primary\"\n            ng-click=\"saveRegistryData(personData, registryFormName)\">\n        Save\n    </button>\n</form>\n<!--Controller-->\n$scope.saveRegistryData = function (personData, registryFormName) {\n    if (registryFormName.$valid) {\n        \/\/ Store person data, etc.\n    };\n};",
-                "id": "",
-                "rows": 22,
-                "type": "",
-                "contentType": "code",
-                "placeholder": "",
-                "errorMessage": "Wrong answer"
-            }/*,{
-                "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2242,9 +1922,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2258,9 +1938,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2274,9 +1954,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2290,9 +1970,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2306,9 +1986,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2322,9 +2002,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2338,9 +2018,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2354,9 +2034,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2370,9 +2050,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2386,9 +2066,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2402,9 +2082,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2418,9 +2098,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2434,9 +2114,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2450,9 +2130,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2466,9 +2146,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2482,9 +2162,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
@@ -2498,9 +2178,153 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            }/*,{
+            }, {
                 "subject": "AngularJS",
-                "questionTopic": "Validation",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
+                "class": "bdg10",
+                "questionPart1": "",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Filters",
                 "class": "bdg10",
                 "questionPart1": "",
                 "questionPart2": "",
