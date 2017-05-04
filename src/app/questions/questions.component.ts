@@ -90,7 +90,7 @@ function convertToLower(val, contType) {  // If the answer is set to text type, 
         val = val.toLowerCase();
         return val;
     } else {
-        if (val.split("'").length % 2 == 1) { // Making that the validation of code accepts single of double quotes
+        if (val.split("'").length % 2 == 1) { // Making that the validation of code accepts single of double quotes pairs, but not alone quoting
             val = val.replace(/\'/g, '"');
         };
         return val;
