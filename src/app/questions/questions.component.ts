@@ -19,6 +19,7 @@ function answerValidation(toCheck: string, cntType): ValidatorFn {  // Function 
 
 function cleanSpace(val): string {  
     val = val.replace(/\r?\n|\r/g, " "); // Converts breaklines to spaces
+    val = val.replace(/\t/g, " "); // Converts tabs to spaces
     val = val.replace(/               /g, " "); // Converts multi-spaces to single-spaces
     val = val.replace(/              /g, " ");
     val = val.replace(/             /g, " ");
@@ -80,7 +81,7 @@ function cleanSpace(val): string {
 
     val = val.replace(/\. /g, ".");
     val = val.replace(/ \./g, ".");
-
+    
     return val;
 };
 
@@ -89,6 +90,9 @@ function convertToLower(val, contType) {  // If the answer is set to text type, 
         val = val.toLowerCase();
         return val;
     } else {
+        if (val.split("'").length % 2 == 1) { // Making that the validation of code accepts single of double quotes
+            val = val.replace(/\'/g, '"');
+        };
         return val;
     };
 };
