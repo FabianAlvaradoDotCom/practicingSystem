@@ -10,21 +10,47 @@
     </div>
   </div>
   <div class="panel-body container">
-    <!--<form [hidden]="show">
+    <form [hidden]="show">
       <div class="form-group">
         <div class="checkbox">
-          <label><span class="bdg4">JS</span>
-            <input id="javascript"
-                   type="checkbox" (click)="showSubjects('JS')">{{js}}
-          </label>
+          <label>
+            <span class="bdg4">JS</span>
+            <input id="chBoxJavascript"
+                   type="checkbox" (click)="showSubjects('JS')">
+          </label><span>&nbsp;&nbsp;</span>
           <label>
             <span class="bdg6">StoryLine</span>
-            <input id="storyline"
-                   type="checkbox" (click)="showSubjects('StoryLine')">{{storyline}}
-          </label>
+            <input id="chBoxStoryline"
+                   type="checkbox" (click)="showSubjects('StoryLine')">
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
+            <span class="bdg1">CSS</span>
+            <input id="chBoxCSS"
+                   type="checkbox" (click)="showSubjects('CSS')">
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
+            <span class="bdg3">UI</span>
+            <input id="chBoxUI"
+                   type="checkbox" (click)="showSubjects('UI')">
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
+            <span class="bdg1">SQL</span>
+            <input id="chBoxSQL"
+                   type="checkbox" (click)="showSubjects('SQL')">
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
+            <span class="bdg2">Ionic</span>
+            <input id="chBoxIonic"
+                   type="checkbox" (click)="showSubjects('Ionic')">
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
+            <span class="bdg10">AngularJS</span>
+            <input id="chBoxAngularJS"
+                   type="checkbox" (click)="showSubjects('AngularJS')">
+          </label><span>&nbsp;&nbsp;</span>
         </div>
       </div>
-    </form>-->
+    </form>
     <form class="form-horizontal row" id="mainContainer"
           novalidate
           (ngSubmit)="save()"
@@ -37,63 +63,64 @@
                      type="checkbox"
                      formControlName="displayQuestions">
               Display questions
-            </label>           
+            </label>
           </div>
         </div>
-        <div id="questionsContainer" class="col-md-8 col offset-md-2" *ngIf="questionsForm.get('displayQuestions').value">
+        <div id="questionsContainer" class="col-md-8 col offset-md-2">
           <p>Please write the code following the same JS grammatical rules, you can add new lines and spaces.</p>
-          <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
-            <div [formGroupName]="i">
-              <div class="form-group"                   
-                   [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
+          <div *ngIf="questionsForm.get('displayQuestions').value">
+            <div formArrayName="arrayAnswers" *ngFor="let answerQuestion of arrayAnswers.controls; let i=index">
+              <div [formGroupName]="i">
+                <div class="form-group"
+                     [ngClass]="{'has-error': (answerQuestion.get('answerField').touched ||
                                               answerQuestion.get('answerField').dirty) &&
                                               !answerQuestion.get('answerField').valid }">
-                <span class="{{questionsAnswers[i].class}}">{{questionsAnswers[i].subject}}</span> <span class="questionsTopic">{{questionsAnswers[i].questionTopic}}</span><br />
-                <label class="control-label h6 question"
-                       attr.for="{{ 'answerId' + i }}">
-                  <span><strong>{{i+1}}</strong>.- {{questionsAnswers[i].questionPart1}}</span>
-                  <br *ngIf="questionsAnswers[i].questionPart2 != ''" />
-                  <span *ngIf="questionsAnswers[i].questionPart2 != ''">{{questionsAnswers[i].questionPart2}}</span>
-                  <br *ngIf="questionsAnswers[i].questionPart3 != ''" />
-                  <span *ngIf="questionsAnswers[i].questionPart3 != ''">{{questionsAnswers[i].questionPart3}}</span>
-                  <br *ngIf="questionsAnswers[i].questionPart4 != ''" />
-                  <span *ngIf="questionsAnswers[i].questionPart4 != ''">{{questionsAnswers[i].questionPart4}}</span>
-                  <br *ngIf="questionsAnswers[i].questionPart5 != ''" />
-                  <span *ngIf="questionsAnswers[i].questionPart5 != ''">{{questionsAnswers[i].questionPart5}}</span>
-                </label>
-                <div>
-                  <textarea class="form-control"
-                            [ngClass]="questionsAnswers[i].contentType == 'code'? 'codeZone': 'textZone'"
-                            id="{{ 'answerId' + i }}"
-                            formControlName="answerField"
-                            rows="{{questionsAnswers[i].rows}}"
-                            placeholder="{{questionsAnswers[i].placeholder}}"></textarea>
-                  <input id="{{ 'correctAnswerId' + i }}"
-                         value="{{questionsAnswers[i].answer}}"
-                         type="hidden"
-                         formControlName="correctAnswerField">
-                  <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
+                  <span class="{{filteredQ_A[i].class}}">{{filteredQ_A[i].subject}}</span> <span class="questionsTopic">{{filteredQ_A[i].questionTopic}}</span><br />
+                  <label class="control-label h6 question"
+                         attr.for="{{ 'answerId' + i }}">
+                    <span><strong>{{i+1}}</strong>.- {{filteredQ_A[i].questionPart1}}</span>
+                    <br *ngIf="filteredQ_A[i].questionPart2 != ''" />
+                    <span *ngIf="filteredQ_A[i].questionPart2 != ''">{{filteredQ_A[i].questionPart2}}</span>
+                    <br *ngIf="filteredQ_A[i].questionPart3 != ''" />
+                    <span *ngIf="filteredQ_A[i].questionPart3 != ''">{{filteredQ_A[i].questionPart3}}</span>
+                    <br *ngIf="filteredQ_A[i].questionPart4 != ''" />
+                    <span *ngIf="filteredQ_A[i].questionPart4 != ''">{{filteredQ_A[i].questionPart4}}</span>
+                    <br *ngIf="filteredQ_A[i].questionPart5 != ''" />
+                    <span *ngIf="filteredQ_A[i].questionPart5 != ''">{{filteredQ_A[i].questionPart5}}</span>
+                  </label>
+                  <div>
+                    <textarea class="form-control"
+                              [ngClass]="filteredQ_A[i].contentType == 'code'? 'codeZone': 'textZone'"
+                              id="{{ 'answerId' + i }}"
+                              formControlName="answerField"
+                              rows="{{filteredQ_A[i].rows}}"
+                              placeholder="{{filteredQ_A[i].placeholder}}"></textarea>
+                    <input id="{{ 'correctAnswerId' + i }}"
+                           value="{{filteredQ_A[i].answer}}"
+                           type="hidden"
+                           formControlName="correctAnswerField">
+                    <span class="help-block" *ngIf="(answerQuestion.get('answerField').touched
                                                          || answerQuestion.get('answerField').dirty) &&
                                                          answerQuestion.get('answerField').errors">
-                    <span *ngIf="answerQuestion.get('answerField').errors.match">
-                      {{questionsAnswers[i].errorMessage}}
+                      <span *ngIf="answerQuestion.get('answerField').errors.match">
+                        {{filteredQ_A[i].errorMessage}}
+                      </span>
                     </span>
-                    
-                  </span>
-                  <span *ngIf="(answerQuestion.get('answerField').touched && answerQuestion.get('answerField').dirty) && !answerQuestion.get('answerField').errors" class="small text-success">
-                    Correct!
-                  </span>
-                  <div class="smallLabel">
-                    <label attr.for="{{ 'showHideAnswer' + i }}">Show answer</label>
-                    <input type="checkbox" (click)="showAnswer(questionsAnswers[i])" id="{{ 'showHideAnswer' + i }}" />
+                    <span *ngIf="(answerQuestion.get('answerField').touched && answerQuestion.get('answerField').dirty) && !answerQuestion.get('answerField').errors" class="small text-success">
+                      Correct!
+                    </span>
+                    <div class="smallLabel">
+                      <label attr.for="{{ 'showHideAnswer' + i }}">Show answer</label>
+                      <input type="checkbox" (click)="showAnswer(filteredQ_A[i])" id="{{ 'showHideAnswer' + i }}" />
+                    </div>
+                    <pre *ngIf="filteredQ_A[i].mostrar" class="tipAnswer rounded">{{filteredQ_A[i].answer}}</pre>
                   </div>
-                  <pre *ngIf="questionsAnswers[i].mostrar" class="tipAnswer rounded">{{questionsAnswers[i].answer}}</pre>
                 </div>
               </div>
+              <br />
             </div>
-            <br />
           </div>
-          <div [hidden]="!questionsForm.valid" class="alert alert-success questionsCompleted" role="alert">
+          <div *ngIf="questionsForm.valid && questionsForm.dirty" class="alert alert-success questionsCompleted" role="alert">
             <strong>Well done!</strong> You successfully completed all questions of the quiz.
           </div>
         </div>
@@ -112,10 +139,10 @@
     </form>
   </div>
 </div>
+
 <!--
 <br>Dirty: {{ questionsForm.dirty }}
 <br>Touched: {{ questionsForm.touched }}
 <br>Valid: {{ questionsForm.valid }}
 <br>Value: {{ questionsForm.value | json }}
-<br>&nbsp;
-    -->
+<br>-->
