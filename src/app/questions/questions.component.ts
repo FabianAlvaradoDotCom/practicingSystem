@@ -122,13 +122,24 @@ export class QuestionsComponent implements OnInit {
     show: boolean = false;  // Not used, just for angular not to launch error.
 
     // Topics of the questions
+    /*js: string = "JS";
+    storyline: string = "StoryLine";
+    css: string = "CSS";
+    ui: string = "UI";
+    sql: string = "SQL";
+    ionic: string = "Ionic";
+    angularjs: string = "AngularJS";
+    jasmine: string = "Jasmine";*/
+
     js: string = "";
     storyline: string = "";
     css: string = "";
     ui: string = "";
     sql: string = "";
     ionic: string = "";
-    angularjs: string = "";
+    angularjs: string = "AngularJS";
+    jasmine: string = "";
+
 
     filteredQ_A: any[] = [0]; // This will hold the objects for questions coming from questionsAnswers once they are filtered by the checkboxes
 
@@ -159,6 +170,7 @@ export class QuestionsComponent implements OnInit {
                 || (this.sql == 'SQL' && this.questionsAnswers[f].subject == "SQL")
                 || (this.ionic == 'Ionic' && this.questionsAnswers[f].subject == "Ionic")
                 || (this.angularjs == 'AngularJS' && this.questionsAnswers[f].subject == "AngularJS")
+                || (this.jasmine == 'Jasmine' && this.questionsAnswers[f].subject == "Jasmine")
             ) {
                 this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer, this.questionsAnswers[f].contentType));
                 this.filteredQ_A[activeSubjectsCounter] = this.questionsAnswers[f];
@@ -208,6 +220,10 @@ export class QuestionsComponent implements OnInit {
                 break;
             case 'AngularJS':
                 this.angularjs = this.angularjs == "" ? "AngularJS" : "";
+                this.ngOnInit();
+                break;
+            case 'Jasmine':
+                this.jasmine = this.jasmine == "" ? "Jasmine" : "";
                 this.ngOnInit();
                 break;
         };
