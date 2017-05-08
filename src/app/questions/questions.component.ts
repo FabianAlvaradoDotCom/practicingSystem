@@ -9,8 +9,8 @@ import { QuestionsDataService } from './questions-data.service'; // Importing ac
 function answerValidation(toCheck: string, cntType): ValidatorFn {  // Function with parameters
     return (c: AbstractControl): { [key: string]: boolean } | null => {
 
-        toCheck = convertToLower(toCheck, cntType); // Verifies the if answer in the repository is code or text, based on that converts to lower
-        var enteredData = convertToLower(c.value, cntType);// Verifies the if answer in the repository is code or text, based on that converts the user entered data to lower
+        toCheck = codeOrText(toCheck, cntType); // Verifies the if answer in the repository is code or text, based on that converts to lower or changes quotatino marks
+        var enteredData = codeOrText(c.value, cntType);// Verifies the if answer in the repository is code or text, based on that converts the user entered data to lower
 
         if (!compareWordByWord(toCheck, enteredData)) {
             return { 'match': true };
@@ -87,9 +87,12 @@ function cleanSpace(val): string {
     return val;
 };
 
-function convertToLower(val, contType) {  // If the answer is set to text type, it converts all to lowercase, not if it is code
+function codeOrText(val, contType) {  // If the answer is set to text type, it converts all to lowercase, not if it is code
     if (contType != "code") {
         val = val.toLowerCase();
+        val = val.replace(/ and /g, ' '); // --------------------------------Replacing " and " by "" for better text validation        
+        val = val.replace(/\,/g, ''); // --------------------------------Deleting commas for better text validation
+        val = val.replace(/\./g, ''); // --------------------------------Deleting periods for better text validation
         return val;
     } else {
         if (val.split("'").length % 2 == 1) { // Making that the validation of code accepts single of double quotes pairs, but not alone quoting
