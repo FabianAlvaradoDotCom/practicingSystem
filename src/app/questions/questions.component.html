@@ -2,8 +2,8 @@
   <div class="panel-heading">
     <div class="container">
       <div class="row">
-        <div>
-          Practice the syntaxis!
+        <div>         
+          Practice the syntax!
           <p class="lead"><span class="small">The purpose of this app is not to explain the concepts and theory of the coding on these technologies, please refer to the subject matter experts to learn from them. It is instead meant to help you to practice the syntax of these languages and frameworks as most likely we do not practice all we learned in a daily basis. In addition it has a few questions so we can reinforce the concepts of some important features of these languages/frameworks. Take a few minutes to refresh all knowledge that costed hours and hours of hard work, and challenge yourself to do it faster and better everytime.</span></p>
         </div>
       </div>
@@ -39,6 +39,11 @@
                    type="checkbox" (click)="showSubjects('SQL')" />
           </label><span>&nbsp;&nbsp;</span>
           <label>
+            <span class="bdg5">MySQL</span>
+            <input id="chBoxMySQL"
+                   type="checkbox" (click)="showSubjects('MySQL')" />
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
             <span class="bdg2">Ionic</span>
             <input id="chBoxIonic"
                    type="checkbox" (click)="showSubjects('Ionic')" />
@@ -46,12 +51,26 @@
           <label>
             <span class="bdg10">AngularJS</span>
             <input id="chBoxAngularJS"
-                   type="checkbox" (click)="showSubjects('AngularJS')" checked />
+                   type="checkbox" (click)="showSubjects('AngularJS')" />
           </label><span>&nbsp;&nbsp;</span>
+
+          <label>
+            <span class="bdg1">Node</span>
+            <input id="chBoxNode"
+                   type="checkbox" (click)="showSubjects('Node')" />
+          </label><span>&nbsp;&nbsp;</span>
+
+
+
           <label>
             <span class="bdg7">Jasmine</span>
             <input id="chBoxJasmine"
                    type="checkbox" (click)="showSubjects('Jasmine')" />
+          </label><span>&nbsp;&nbsp;</span>
+          <label>
+            <span class="bdg3">BA</span>
+            <input id="chBoxBA"
+                   type="checkbox" (click)="showSubjects('BA')" />
           </label><span>&nbsp;&nbsp;</span>
         </div>
       </div>
@@ -118,7 +137,8 @@
                       <label attr.for="{{ 'showHideAnswer' + i }}">Show answer</label>
                       <input type="checkbox" (click)="showAnswer(filteredQ_A[i])" id="{{ 'showHideAnswer' + i }}" />
                     </div>
-                    <pre *ngIf="filteredQ_A[i].mostrar" class="tipAnswer rounded">{{filteredQ_A[i].answer}}</pre>
+                    <pre *ngIf="filteredQ_A[i].mostrar && filteredQ_A[i].contentType == 'code'" class="tipAnswer rounded">{{filteredQ_A[i].answer}}</pre>
+                    <p *ngIf="filteredQ_A[i].mostrar && filteredQ_A[i].contentType != 'code'" class="tipAnswer rounded">{{filteredQ_A[i].answer}}</p>
                   </div>
                 </div>
               </div>

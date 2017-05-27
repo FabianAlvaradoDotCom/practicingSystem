@@ -21,7 +21,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Selectors",
                 "class": "bdg1",
@@ -37,7 +37,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "perro#gato \n.perro #gato (with space)"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Selectors",
                 "class": "bdg1",
@@ -53,7 +53,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -69,7 +69,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -85,7 +85,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -101,7 +101,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -117,7 +117,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer - For tilde ~ symbol, use alt + 126"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -133,7 +133,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer - For Circumflex accent or Caret ^ symbol, use alt + 94"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -149,7 +149,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "CSS",
                 "questionTopic": "Attribute Selectors",
                 "class": "bdg1",
@@ -165,7 +165,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer - For Circumflex accent or Caret ^ symbol, use alt + 94"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -215,7 +215,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -231,7 +231,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -247,7 +247,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -263,7 +263,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -296,7 +296,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -312,7 +312,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -397,7 +397,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Tip, there are 6"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -464,7 +464,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -480,7 +480,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Javascript _________",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -496,7 +496,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "True or false"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -512,7 +512,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Yes or no",
                 "errorMessage": "True or false"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -528,7 +528,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "True or false"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -544,7 +544,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -560,7 +560,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "True or false",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -576,7 +576,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -592,7 +592,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -608,7 +608,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -624,7 +624,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -640,7 +640,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -656,7 +656,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -667,12 +667,12 @@ export class QuestionsDataService {
                 "questionPart5": "",
                 "answer": "A function with preserved data",
                 "id": "",
-                "rows": 12,
+                "rows": 1,
                 "type": "",
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -681,14 +681,14 @@ export class QuestionsDataService {
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "-----------------------------------",
+                "answer": "var sumatoria = function(inicio){\n	var total = inicio;\n	var sumar = function(constante){\n		total = total + constante;\n		console.log(total);\n	};\n	return sumar;\n};\n\nvar suma10 = sumatoria(10);\nvar suma15 = sumatoria(15);\n\n// Execute\nsuma10(3);\nsuma15(3);",
                 "id": "",
-                "rows": 6,
+                "rows": 15,
                 "type": "",
-                "contentType": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -704,7 +704,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -720,7 +720,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -736,7 +736,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -752,7 +752,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -768,7 +768,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -784,7 +784,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -800,7 +800,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -816,7 +816,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -832,7 +832,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -848,7 +848,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -864,7 +864,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -880,7 +880,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -896,7 +896,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -946,7 +946,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "A, B(if defined with the new keyword), D, F, M, N(if defined with the new keyword), O, S(if defined with the new keyword)"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -962,7 +962,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -978,7 +978,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -994,7 +994,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1010,7 +1010,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1026,7 +1026,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1042,7 +1042,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "JS",
                 "questionTopic": "Basics",
                 "class": "bdg4",
@@ -1058,7 +1058,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1074,7 +1074,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer, do not forget the PANEL word"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1090,7 +1090,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer, do not forget the PANEL word"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1106,7 +1106,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1122,7 +1122,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "By adding a ___ _____ and _________ ____",
                 "errorMessage": "By adding a ___ _____ and _________ ____"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1138,7 +1138,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "____ ____ and _____ ____",
                 "errorMessage": "____ ____ and _____ ____"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1154,7 +1154,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "In the ________ tab by changing the _______ option",
                 "errorMessage": "In the ________ tab by changing the _______ option"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1170,7 +1170,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "By clicking on ______ tab and then Convert to ________",
                 "errorMessage": "By clicking on ______ tab and then Convert to ________"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1186,7 +1186,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "By editing the ________ Master in ____ tab",
                 "errorMessage": "By editing the ________ Master in ____ tab"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1202,7 +1202,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "In the _____ ____ panel first select the scene that contains the questions, then in the ______ tab click on New Slide. The Insert Slides window will pop up, from there select ________ tab and then select ______ ______ slide",
                 "errorMessage": "In the _____ ____ panel first select the scene that contains the questions, then in the ______ tab click on New Slide. The Insert Slides window will pop up, from there select ________ tab and then select ______ ______ slide"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1218,7 +1218,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "____ > _______ > ___ > _________ and ________ > ________",
                 "errorMessage": "____ > _______ > ___ > _________ and ________ > ________"
-            },{
+            }, {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -1234,7 +1234,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Track using ______ of ______ ______ or using ____ ______",
                 "errorMessage": "Track using ______ of ______ ______ or using ____ ______"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1250,7 +1250,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "A________ U___ D___, I_______ T_________, S_______ and S__________, P____ P__________, I_____________ P_______",
                 "errorMessage": "A________ U___ D___, I_______ T_________, S_______ and S__________, P____ P__________, I_____________ P_______"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1266,7 +1266,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1282,7 +1282,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1298,7 +1298,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1314,7 +1314,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1330,7 +1330,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1346,7 +1346,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1362,7 +1362,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1378,7 +1378,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1394,7 +1394,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1410,7 +1410,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1426,7 +1426,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1442,7 +1442,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "Remeber is the equivalen in mm to approximately 40px to 50px",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1458,7 +1458,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1474,7 +1474,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1490,7 +1490,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1506,7 +1506,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1522,7 +1522,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "UI",
                 "questionTopic": "Basics",
                 "class": "bdg3",
@@ -1538,10 +1538,26 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "SQL",
                 "questionTopic": "Basics",
                 "class": "bdg1",
+                "questionPart1": "What does SQL stand for?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "Structured Query Language",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
                 "questionPart1": "Run a query that returns 3 records from the table \"tableCustomers\" that have completed the course #5 (in column completedCourses), and it is ordered ascending by the member member_id",
                 "questionPart2": "",
                 "questionPart3": "",
@@ -1551,10 +1567,250 @@ export class QuestionsDataService {
                 "id": "",
                 "rows": 5,
                 "type": "",
-                "contentType": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What is the command to show the existent databases?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "SHOW DATABASES;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to create a database named \"pagos\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "CREATE DATABASE pagos;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to select a database named \"entradas\" and start using it?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "USE entradas;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to delete a database named \"altas\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "DROP DATABASE altas;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to create an admin user  named \"db_admin\" with password \"secret\" for an especific local database named \"db_pagos\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "GRANT ALL PRIVILEGES ON db_pagos.*\nTO 'db_admin'@'localhost'\nIDENTIFIED BY 'secret';",
+                "id": "",
+                "rows": 4,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to display the privileges granted to \"my_db_admin\" on this local database \"db_employees\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "SHOW GRANTS FOR 'my_db_admin'@'localhost';",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to login with the user \"admin_db\" to this particular database \"db_personas\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "mysql -u admin_db -p db_personas",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What is the command to show the existent tables in the current database?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "SHOW TABLES;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to create a table named \"sales\", that contains: A primary key \"id\", 11 integers, not null that will auto increment, a key named \"products\", string of 200 chars, not null, a key named \"payed\", boolean of 1 digit, not null?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "CREATE TABLE sales (\n id INT(11) NOT NULL AUTO_INCREMENT,\n products VARCHAR(200) NOT NULL,\n payed TINYINT(1) NOT NULL,\n PRIMARY KEY (id)\n);",
+                "id": "",
+                "rows": 15,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to remove all privileges to user  named \"db_admin\"from a local database?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "REVOKE ALL PRIVILEGES ON *.* FROM 'db_admin'@'localhost';",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to refresh privileges from all users?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "FLUSH PRIVILEGES;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to show all columns contained in the table \"employees\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "SHOW COLUMNS FROM employees;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to insert a record to a table named \"teamsTable\", that includes this data, key: \"team_name\": \"Heat\", key: \"position\": \"1\", key \"won\": true?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "INSERT INTO teamsTable (team_name, position, won) VALUES ('Heat', 1, 1);",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to update a record of a table named \"arrivalsTable\", the update goes in the column \"position\", the record will be equals 20, for the record id: 2",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "UPDATE arrivalsTable\nSET position = 20\nWHERE id = 2;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "MySQL",
+                "questionTopic": "Basics",
+                "class": "bdg5",
+                "questionPart1": "What would be the command to delete the record with id: 10 of a table named \"clientsTable\"?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "DELETE FROM clientsTable WHERE id = 10;",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1570,7 +1826,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1586,7 +1842,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1602,7 +1858,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1618,7 +1874,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "_____ ___ [device]",
                 "errorMessage": "_____ ___ [device]"
-            },{
+            }, {
                 "subject": "Ionic",
                 "questionTopic": "Basics",
                 "class": "bdg2",
@@ -1634,7 +1890,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "_______ ________ ___ _______@5.1.1",
                 "errorMessage": "_______ ________ ___ _______@5.1.1"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1650,7 +1906,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1666,7 +1922,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1682,7 +1938,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1691,14 +1947,14 @@ export class QuestionsDataService {
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "var myApp = angular.module('myApp', [/*Modules dependencies*/]);",
+                "answer": "var myApp = angular.module('myApp', [/*Modules dependencies* /]);",
                 "id": "",
                 "rows": 2,
                 "type": "",
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1714,7 +1970,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1730,7 +1986,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1746,7 +2002,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1762,7 +2018,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Basics",
                 "class": "bdg10",
@@ -1778,7 +2034,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1794,7 +2050,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1810,7 +2066,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1826,7 +2082,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1842,7 +2098,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1858,7 +2114,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1874,7 +2130,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1890,7 +2146,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1906,7 +2162,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1922,7 +2178,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1938,7 +2194,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1954,7 +2210,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1970,7 +2226,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -1986,7 +2242,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -2002,7 +2258,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Directives",
                 "class": "bdg10",
@@ -2018,7 +2274,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2034,7 +2290,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2050,7 +2306,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2066,7 +2322,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2082,7 +2338,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2098,7 +2354,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2114,7 +2370,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2130,7 +2386,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2146,7 +2402,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2162,7 +2418,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2178,7 +2434,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2194,7 +2450,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Filters",
                 "class": "bdg10",
@@ -2210,7 +2466,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "ngModel",
                 "class": "bdg10",
@@ -2226,7 +2482,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "ngModel",
                 "class": "bdg10",
@@ -2242,7 +2498,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "ngModel",
                 "class": "bdg10",
@@ -2258,7 +2514,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2274,7 +2530,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2290,7 +2546,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2306,7 +2562,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2322,7 +2578,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2338,7 +2594,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "D, P, V and I"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2354,7 +2610,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "____ attribute",
                 "errorMessage": "____ attribute"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2370,7 +2626,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Validation",
                 "class": "bdg10",
@@ -2386,7 +2642,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2402,7 +2658,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2418,7 +2674,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2434,7 +2690,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2450,7 +2706,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2466,7 +2722,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2475,14 +2731,14 @@ export class QuestionsDataService {
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "salesApp.controller(\"MainController\", function MainController($scope, registryService) {\n   $scope.memberData = registryService.memberData;\n});",				
+                "answer": "salesApp.controller(\"MainController\", function MainController($scope, registryService) {\n   $scope.memberData = registryService.memberData;\n});",
                 "id": "",
                 "rows": 5,
                 "type": "",
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2498,7 +2754,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "// Service...\n// Controller...",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2514,7 +2770,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "// Service...\n// Controller...",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2530,7 +2786,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2546,7 +2802,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Services",
                 "class": "bdg10",
@@ -2562,7 +2818,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
@@ -2578,7 +2834,7 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
@@ -2594,9 +2850,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "// Service...\n// Controller...",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                 "questionTopic": "BuiltIn Services",
+                "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
                 "questionPart1": "What does the $compile Service do?",
                 "questionPart2": "",
@@ -2610,9 +2866,9 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                 "questionTopic": "BuiltIn Services",
+                "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
                 "questionPart1": "What does the $parse Service do?",
                 "questionPart2": "",
@@ -2626,9 +2882,9 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                 "questionTopic": "BuiltIn Services",
+                "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
                 "questionPart1": "What does the $locale Service do?",
                 "questionPart2": "",
@@ -2642,9 +2898,9 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                 "questionTopic": "BuiltIn Services",
+                "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
                 "questionPart1": "The $timeout Service is very similar to JS timeout method, so write the code to execute countDown() function after 3000 ms, and a cancel cancelCountDown() function to stop it.",
                 "questionPart2": "",
@@ -2658,9 +2914,9 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                 "questionTopic": "BuiltIn Services",
+                "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
                 "questionPart1": "Explain the $filter Service",
                 "questionPart2": "",
@@ -2674,9 +2930,9 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
-                 "questionTopic": "BuiltIn Services",
+                "questionTopic": "BuiltIn Services",
                 "class": "bdg10",
                 "questionPart1": "Checar cookies",
                 "questionPart2": "",
@@ -2690,7 +2946,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Routing",
                 "class": "bdg10",
@@ -2706,7 +2962,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Routing",
                 "class": "bdg10",
@@ -2715,14 +2971,14 @@ export class QuestionsDataService {
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "Not anymore in the view, it goes in the config file when we specify the routes",
+                "answer": "Not anymore in the view, it goes in the .config method of angular when we specify the routes",
                 "id": "",
                 "rows": 2,
                 "type": "",
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Routing",
                 "class": "bdg10",
@@ -2738,7 +2994,23 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Routing",
+                "class": "bdg10",
+                "questionPart1": "What is the provider and its method to set a route?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "$routeProvider.when()",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Routing",
                 "class": "bdg10",
@@ -2754,7 +3026,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Custom Directives",
                 "class": "bdg10",
@@ -2770,23 +3042,71 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Custom Directives",
                 "class": "bdg10",
-                "questionPart1": "Write a directive - *I will complete details later",
+                "questionPart1": "Write a directive",
                 "questionPart2": "",
                 "questionPart3": "",
                 "questionPart4": "",
                 "questionPart5": "",
-                "answer": "// Directive JS\neventsApp.directive('eventThumbnail', function() {\n    return {\n        restrict: 'E',\n        replace: true,\n        templateUrl: '/templates/directives/eventThumbnail.html',\n        scope: {\n            event: \"=\"\n        }\n    }\n});\n// Directive HTML\n<a href=\"event/{{event.id}}\">\n    <div class=\"well hoverwell\">\n        <div class=\"row\"><h2 class=\"span6\">{{event.name}}</h2></div>\n        <div class=\"row\">\n            <span class=\"span1\">Date:</span>\n            <span>{{event.date}}</span>\n        </div>\n        <div class=\"row\">\n            <span class=\"span1\">Time:</span>\n            <span>{{event.time}}</span>\n        </div>\n        <div class=\"row\">\n            <span class=\"span1\">Location:</span>\n            <span>{{event.location.address}}</span>\n        </div>\n        <div class=\"row\">\n            <span class=\"span1\">&nbsp;</span>\n            <span>{{event.location.city}}, {{event.location.province}}</span>\n        </div>\n    </div>\n</a>",
+                "answer": "// Directive JS\neventsApp.directive('eventThumbnail', function() {\n    return {\n        restrict: 'E',\n        replace: true, // This makes the custom directive to dissapear and keep\n                       only valid html elements.\n        templateUrl: '/templates/directives/eventThumbnail.html',\n        scope: {\n            event: \"=\"\n        }\n    }\n});",
                 "id": "",
-                "rows": 35,
+                "rows": 14,
                 "type": "",
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Custom Directives",
+                "class": "bdg10",
+                "questionPart1": "What do the \"=\", \"&\" and \"@\" mean in relation to the scope?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "\"=\" means that the scope of variables used is the same as the directive\n\"&\" means that the scope is the same as its parent,\nand \"@\" expects to receive the data as a one way binding directive{{}}",
+                "id": "",
+                "rows": 4,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Custom Directives",
+                "class": "bdg10",
+                "questionPart1": "When the link method of the directive is used?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "When we create a directive that will manipulate the DOM",
+                "id": "",
+                "rows": 4,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "AngularJS",
+                "questionTopic": "Unit Testing",
+                "class": "bdg10",
+                "questionPart1": "What is the command to run Karma testing?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "karma start test/karma.conf.js",
+                "id": "",
+                "rows": 4,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "Unit Testing",
                 "class": "bdg10",
@@ -2802,7 +3122,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "AngularJS",
                 "questionTopic": "E2E",
                 "class": "bdg10",
@@ -2818,7 +3138,7 @@ export class QuestionsDataService {
                 "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
-            },{
+            }, {
                 "subject": "Jasmine",
                 "questionTopic": "Essentials",
                 "class": "bdg7",
@@ -2835,7 +3155,7 @@ export class QuestionsDataService {
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             }
-			,{
+            , {
                 "subject": "Jasmine",
                 "questionTopic": "Essentials",
                 "class": "bdg7",
@@ -2852,7 +3172,7 @@ export class QuestionsDataService {
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             }
-			,{
+            , {
                 "subject": "Jasmine",
                 "questionTopic": "Essentials",
                 "class": "bdg7",
@@ -2869,7 +3189,7 @@ export class QuestionsDataService {
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             }
-			,{
+            , {
                 "subject": "Jasmine",
                 "questionTopic": "Essentials",
                 "class": "bdg7",
@@ -2883,6 +3203,262 @@ export class QuestionsDataService {
                 "rows": 2,
                 "type": "",
                 "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "BA",
+                "questionTopic": "Use Cases",
+                "class": "bdg1",
+                "questionPart1": "What are the benefits of creating Use Cases?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "Developers will know exactly what to develop and what the outcome will be, testers will\nknow exctly what os the expected result, and very important, as BA we will have all\nscenarios covered so it will not appear unknown circumstances",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "BA",
+                "questionTopic": "Use Cases",
+                "class": "bdg1",
+                "questionPart1": "In our Use Cases document, after the cover page and revision history page, what comes next?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "List of Primary Actors, which contains 2 columns, Primary Actors and Use Cases, it explains what Primary Actors insteract with what Use cases",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "BA",
+                "questionTopic": "Use Cases",
+                "class": "bdg1",
+                "questionPart1": "What are the sections that a Use Case must include?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "ID, Primary Actor, Description, Trigger, PreConditions, PostConditions, Normal Flow, Alternative Flows, Exceptions, Priority, Business Rules, Other Information",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "Write the code so Node gets the value of var \"dogName\" from user input when executes 'node index.js Rocky'",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "var dogName= process.argv[2];\nconsole.log(dogName);",
+                "id": "",
+                "rows": 2,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the syntax to use code of other files in one .js file in a node application? Write the code to use code of the file \"externals.js\" that is located in the same directory. We will store the external data in a var named \"imported\"",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "var imported = require(\"./externals\");",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "To use data from an external file in another js file on a node application, is it enough to require the external file? If so or if not, explain it.",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "No, it is still necessary in the external file to export the data we want to expose by using the \"exports.\" object and appending a new property that will hold the data we are exposing, like \"exports.exposedData = something;\"",
+                "id": "",
+                "rows": 3,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            },{
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "Write the code to print to the console the current directory path and name",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "console.log(__dirname);",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "Write the code to print to the console the current file path and name",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "console.log(__filename);",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "After we required the 'path' module and stored in a variable named 'path', what is the code to get only the filename of the current js file runing on node?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "path.basename(__filename);",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the process method to print a message to the console?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "process.stdout.write();",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What would be the code so the console waits for input from the user using process.stdin method, and then prints it to the console?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "process.stdin.on('data', function (data) {\n   process.stdout.write(data);\n});",
+                "id": "",
+                "rows": 4,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the process method to stop the current process?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "process.exit();",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the process method to execute some lines after the process has been exited?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "process.on('exit', function(){\n   ...\n});",
+                "id": "",
+                "rows": 4,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the command to clear the just printed line with process.stdout.write?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "process.stdout.clearLine();",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the command to move the cursor the \"x\" line?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "process.stdout.cursorTo(x);",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "What is the command to join several strings to generate a path? Use these strings as example to make a path: 'www' plus 'location' plus 'folder'. /* Please notice that it does not use '+' but ',' ",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "path.join('www', 'location', 'folder');",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             }

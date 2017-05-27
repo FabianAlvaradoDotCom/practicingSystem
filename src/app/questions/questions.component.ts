@@ -125,23 +125,29 @@ export class QuestionsComponent implements OnInit {
     show: boolean = false;  // Not used, just for angular not to launch error.
 
     // Topics of the questions
-    /*js: string = "JS";
-    storyline: string = "StoryLine";
-    css: string = "CSS";
-    ui: string = "UI";
-    sql: string = "SQL";
-    ionic: string = "Ionic";
-    angularjs: string = "AngularJS";
-    jasmine: string = "Jasmine";*/
+    //js: string = "JS";
+    //storyline: string = "StoryLine";
+    //css: string = "CSS";
+   // ui: string = "UI";
+   // sql: string = "SQL";
+    //mysql: string = "MySQL";
+    //ionic: string = "Ionic";
+    //angularjs: string = "AngularJS";
+    //jasmine: string = "Jasmine";
+    // ba: string = "BA";
+    // node: string = "Node";
 
     js: string = "";
     storyline: string = "";
     css: string = "";
     ui: string = "";
     sql: string = "";
+    mysql: string = "";
     ionic: string = "";
-    angularjs: string = "AngularJS";
+    angularjs: string = "";
     jasmine: string = "";
+    ba: string = "";
+    node: string = "";
 
 
     filteredQ_A: any[] = [0]; // This will hold the objects for questions coming from questionsAnswers once they are filtered by the checkboxes
@@ -171,9 +177,12 @@ export class QuestionsComponent implements OnInit {
                 || (this.css == 'CSS' && this.questionsAnswers[f].subject == "CSS")
                 || (this.ui == 'UI' && this.questionsAnswers[f].subject == "UI")
                 || (this.sql == 'SQL' && this.questionsAnswers[f].subject == "SQL")
+                || (this.mysql == 'MySQL' && this.questionsAnswers[f].subject == "MySQL")
                 || (this.ionic == 'Ionic' && this.questionsAnswers[f].subject == "Ionic")
                 || (this.angularjs == 'AngularJS' && this.questionsAnswers[f].subject == "AngularJS")
                 || (this.jasmine == 'Jasmine' && this.questionsAnswers[f].subject == "Jasmine")
+                || (this.ba == 'BA' && this.questionsAnswers[f].subject == "BA")
+                || (this.node == 'Node' && this.questionsAnswers[f].subject == "Node")
             ) {
                 this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer, this.questionsAnswers[f].contentType));
                 this.filteredQ_A[activeSubjectsCounter] = this.questionsAnswers[f];
@@ -217,6 +226,10 @@ export class QuestionsComponent implements OnInit {
                 this.sql = this.sql == "" ? "SQL" : "";
                 this.ngOnInit();
                 break;
+            case 'MySQL':
+                this.mysql = this.mysql == "" ? "MySQL" : "";
+                this.ngOnInit();
+                break;
             case 'Ionic':
                 this.ionic = this.ionic == "" ? "Ionic" : "";
                 this.ngOnInit();
@@ -227,6 +240,14 @@ export class QuestionsComponent implements OnInit {
                 break;
             case 'Jasmine':
                 this.jasmine = this.jasmine == "" ? "Jasmine" : "";
+                this.ngOnInit();
+                break;
+            case 'BA':
+                this.ba = this.ba == "" ? "BA" : "";
+                this.ngOnInit();
+                break;
+            case 'Node':
+                this.node = this.node == "" ? "Node" : "";
                 this.ngOnInit();
                 break;
         };
