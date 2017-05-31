@@ -1058,7 +1058,58 @@ export class QuestionsDataService {
                 "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer."
-            }, {
+            }
+
+
+
+
+
+
+
+
+
+            , {
+                "subject": "ES6",
+                "questionTopic": "Basics",
+                "class": "bdg4",
+                "questionPart1": "First Question",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "Starting with it",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer."
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            , {
                 "subject": "StoryLine",
                 "questionTopic": "Basics",
                 "class": "bdg6",
@@ -3447,7 +3498,7 @@ export class QuestionsDataService {
                 "errorMessage": "Wrong answer"
             }, {
                 "subject": "Node",
-                "questionTopic": "",
+                "questionTopic": "Core Modules",
                 "class": "bdg1",
                 "questionPart1": "What is the command to join several strings to generate a path? Use these strings as example to make a path: 'www' plus 'location' plus 'folder'. /* Please notice that it does not use '+' but ',' ",
                 "questionPart2": "",
@@ -3459,6 +3510,183 @@ export class QuestionsDataService {
                 "rows": 1,
                 "type": "",
                 "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the result of importing the 'utilities' module and then writing this code: 'util.log('something')'",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "The text logged to the screen will include the timestamp.",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the module that gives statistics of the memory status?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "v8 module",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the code to print the memory statistics?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "console.log(v8.getHeapStatistics());",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the core module we can use to manage easily questions and aswers to the console?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "readline module",
+                "id": "",
+                "rows": 1,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the code to ask a question and expect for an answer using the readline module? Write the code to require the module, to create the instance of readline and to create the interface.",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "var readline = require('readline');\nvar rl = readline.createInterface(process.stdin, process.stdout);\nrl.question(\"Is this the question?\", function (answer) {\n   console.log(answer);\n});",
+                "id": "",
+                "rows": 5,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the code to ask a question using readline prompt method?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "rl.setPrompt('This is the question...?');\nrl.prompt();\nrl.on('line', function (answer) {\n    console.log(answer);\n});",
+                "id": "",
+                "rows": 5,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+
+            }, {
+                "subject": "Node",
+                "questionTopic": "Core Modules",
+                "class": "bdg1",
+                "questionPart1": "What is the code to stop a readline process?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "rl.close();",
+                "id": "",
+                "rows": 5,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "EventEmitter",
+                "class": "bdg1",
+                "questionPart1": "What is the code to stop a readline process?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "rl.close();",
+                "id": "",
+                "rows": 5,
+                "type": "",
+                "contentType": "code",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "",
+                "class": "bdg1",
+                "questionPart1": "When creating code for Node, we cannot write line after line and wait it to execute it synchronously as it is asynchronous, wha should we do to write good code?",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "Instead of writing lines and expect them to execute one after the other whicch is incorrect, we need to create callbacks that will execute only when the previous instruction has been created.",
+                "id": "",
+                "rows": 3,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Call Backs Conventions",
+                "class": "bdg1",
+                "questionPart1": "Describe the 'Get Stuff' Call Back convention:",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "The 'Get Stuff: getStuff(inputParam, callBack)' CallBack convention takes 2 parameters, the first one is a regular input parameter, and the second is the call back function once the getStuff has completed. This convention establishes that the call back parameter is the last parameter passed.",
+                "id": "",
+                "rows": 3,
+                "type": "",
+                "contentType": "",
+                "placeholder": "",
+                "errorMessage": "Wrong answer"
+            }, {
+                "subject": "Node",
+                "questionTopic": "Call Backs Conventions",
+                "class": "bdg1",
+                "questionPart1": "Describe the 'Error Handling' Call Back convention:",
+                "questionPart2": "",
+                "questionPart3": "",
+                "questionPart4": "",
+                "questionPart5": "",
+                "answer": "In the 'Error Handling' Call Back convention the first value passed to the call back should always be an error parameter. Additionally it is very convenient to to verify whether a function succeeded by checking for an 'undefined' or 'falsy' error value at the top of your call back function",
+                "id": "",
+                "rows": 3,
+                "type": "",
+                "contentType": "",
                 "placeholder": "",
                 "errorMessage": "Wrong answer"
             }

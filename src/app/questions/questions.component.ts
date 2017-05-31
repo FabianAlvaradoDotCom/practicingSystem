@@ -126,6 +126,7 @@ export class QuestionsComponent implements OnInit {
 
     // Topics of the questions
     //js: string = "JS";
+    //es6: string = "ES6";
     //storyline: string = "StoryLine";
     //css: string = "CSS";
    // ui: string = "UI";
@@ -138,6 +139,7 @@ export class QuestionsComponent implements OnInit {
     // node: string = "Node";
 
     js: string = "";
+    es6: string = "";
     storyline: string = "";
     css: string = "";
     ui: string = "";
@@ -173,6 +175,7 @@ export class QuestionsComponent implements OnInit {
 
             if (
                 (this.js == 'JS' && this.questionsAnswers[f].subject == "JS")
+                || (this.es6 == 'ES6' && this.questionsAnswers[f].subject == "ES6")
                 || (this.storyline == 'StoryLine' && this.questionsAnswers[f].subject == "StoryLine")
                 || (this.css == 'CSS' && this.questionsAnswers[f].subject == "CSS")
                 || (this.ui == 'UI' && this.questionsAnswers[f].subject == "UI")
@@ -208,6 +211,10 @@ export class QuestionsComponent implements OnInit {
         switch (subject) {
             case 'JS':
                 this.js = this.js == "" ? 'JS' : "";
+                this.ngOnInit();
+                break;
+            case 'ES6':
+                this.es6 = this.es6 == "" ? 'ES6' : "";
                 this.ngOnInit();
                 break;
             case 'StoryLine':
