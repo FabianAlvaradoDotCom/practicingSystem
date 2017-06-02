@@ -137,6 +137,7 @@ export class QuestionsComponent implements OnInit {
     //jasmine: string = "Jasmine";
     // ba: string = "BA";
     // node: string = "Node";
+    // mongo: string = "MongoDB";
 
     js: string = "";
     es6: string = "";
@@ -150,6 +151,7 @@ export class QuestionsComponent implements OnInit {
     jasmine: string = "";
     ba: string = "";
     node: string = "";
+    mongo: string = "";
 
 
     filteredQ_A: any[] = [0]; // This will hold the objects for questions coming from questionsAnswers once they are filtered by the checkboxes
@@ -186,6 +188,7 @@ export class QuestionsComponent implements OnInit {
                 || (this.jasmine == 'Jasmine' && this.questionsAnswers[f].subject == "Jasmine")
                 || (this.ba == 'BA' && this.questionsAnswers[f].subject == "BA")
                 || (this.node == 'Node' && this.questionsAnswers[f].subject == "Node")
+                || (this.mongo == 'MongoDB' && this.questionsAnswers[f].subject == "MongoDB")
             ) {
                 this.arrayAnswers.push(this.buildAnswer(this.questionsAnswers[f].answer, this.questionsAnswers[f].contentType));
                 this.filteredQ_A[activeSubjectsCounter] = this.questionsAnswers[f];
@@ -255,6 +258,10 @@ export class QuestionsComponent implements OnInit {
                 break;
             case 'Node':
                 this.node = this.node == "" ? "Node" : "";
+                this.ngOnInit();
+                break;
+            case 'MongoDB':
+                this.mongo = this.mongo == "" ? "MongoDB" : "";
                 this.ngOnInit();
                 break;
         };
